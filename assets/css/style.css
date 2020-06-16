@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #topbar .contact-info i {
-  color:  rgb(25, 243, 6);
+  color: #cc1616;
   padding-right: 4px;
 }
 
@@ -237,8 +237,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", sans-serif;
 }
 
-.nav-menu > ul > li > a:hover, .nav-menu .active {
-  color: rgb(25, 243, 6)!important;
+.nav-menu > ul > li:hover, .nav-menu .active {
+  background: #cc1616;
 }
 
 .nav-menu .drop-down ul {
@@ -370,7 +370,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color:  rgb(25, 243, 6);
+  color: #e82d2d;
   text-decoration: none;
 }
 
@@ -431,7 +431,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/chimera3.png") top center;
+  background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
   position: relative;
 }
