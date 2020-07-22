@@ -14,11 +14,11 @@ body {
 }
 
 a {
-  color: #cc1616;
+  color: rgb(25, 243, 6);
 }
 
 a:hover {
-  color: #e82d2d;
+  color: rgb(25, 243, 6);
   text-decoration: none;
 }
 
@@ -44,13 +44,13 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   width: 40px;
   height: 40px;
-  background: #cc1616;
+  background:rgb(25, 243, 6);;
   color: #fff;
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-  background: #e72323;
+  background: rgb(25, 243, 6);;
   color: #fff;
 }
 
@@ -479,8 +479,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #cc1616;
-  border-color: #cc1616;
+  background: rgb(25, 243, 6);;
+  border-color: rgb(25, 243, 6);;
 }
 
 @media (min-width: 1024px) {
@@ -605,7 +605,7 @@ section {
   display: block;
   font-size: 28px;
   font-weight: 700;
-  color: #ed5b5b;
+  color: rgb(25, 243, 6);
 }
 
 .why-us .box h4 {
@@ -624,13 +624,13 @@ section {
 }
 
 .why-us .box:hover {
-  background: #cc1616;
+  background: rgb(255, 255, 255);;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
 
 .why-us .box:hover span, .why-us .box:hover h4, .why-us .box:hover p {
-  color: #fff;
+  color: rgb(4, 155, 29);
 }
 
 /*--------------------------------------------------------------
@@ -885,120 +885,62 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Pricing
---------------------------------------------------------------*/
-.pricing .box {
-  padding: 20px;
-  background: #f9f9f9;
+# Button
+----------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+.description {
+  font-family: 'Amatic SC', cursive;
   text-align: center;
-  border-radius: 8px;
-  position: relative;
-  overflow: hidden;
+}
+.description {
+	font-size: 35px;
 }
 
-.pricing .box h3 {
-  font-weight: 400;
-  padding: 15px;
-  font-size: 18px;
+.btn{
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
   text-transform: uppercase;
-  font-weight: 600;
-  color: #191919;
-}
-
-.pricing .box h4 {
-  font-size: 42px;
-  color: #cc1616;
-  font-weight: 500;
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: 20px;
-}
-
-.pricing .box h4 sup {
-  font-size: 20px;
-  top: -15px;
-  left: -3px;
-}
-
-.pricing .box h4 span {
-  color: #bababa;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.pricing .box ul {
-  padding: 0;
-  list-style: none;
-  color: #191919;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
-}
-
-.pricing .box ul li {
-  padding-bottom: 16px;
-}
-
-.pricing .box ul i {
-  color: #cc1616;
-  font-size: 18px;
-  padding-right: 4px;
-}
-
-.pricing .box ul .na {
-  color: #ccc;
-  text-decoration: line-through;
-}
-
-.pricing .box .btn-wrap {
-  padding: 15px;
-  text-align: center;
-}
-
-.pricing .box .btn-buy {
-  background: #cc1616;
-  display: inline-block;
-  padding: 10px 40px;
+  outline: none;
+  overflow: hidden;
+  position: relative;
   color: #fff;
-  transition: none;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  transition: 0.3s;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #222;
+  padding: 17px 60px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
 }
 
-.pricing .box .btn-buy:hover {
-  background: #e82d2d;
+.btn span {
+  position: relative; 
+  z-index: 1;
 }
 
-.pricing .featured {
-  background: #cc1616;
-  box-shadow: none;
-  color: #fff;
+.btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: rgb(25, 243, 6);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-93%) translateY(-25%) rotate(45deg);
 }
 
-.pricing .featured h3, .pricing .featured h4, .pricing .featured ul, .pricing .featured ul li, .pricing .featured ul .na {
-  color: #fff;
+.btn:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  
 }
-
-.pricing .featured h4 span {
-  color: rgba(255, 255, 255, 0.58);
-}
-
-.pricing .featured .btn-wrap {
-  padding: 15px;
-  text-align: center;
-}
-
-.pricing .featured .btn-buy {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.pricing .featured .btn-buy:hover {
-  background: #fff;
-  color: #cc1616;
-}
-
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
@@ -1045,7 +987,7 @@ section {
 }
 
 .team .member .social a:hover {
-  color: #cc1616;
+  color: rgb(25, 243, 6);
 }
 
 .team .member .social i {
@@ -1183,6 +1125,31 @@ section {
     transform: rotate(360deg);
   }
 }
+/*--------------------------------------------------------------
+# Our Team Button
+--------------------------------------------------------------*/
+.btn-raised {
+  transition: box-shadow .4s cubic-bezier(.25, .8, .25, 1), transform .4s cubic-bezier(.25, .8, .25, 1);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26)
+}
+
+.btn-raised:not([disabled]):active,
+.btn-raised:not([disabled]):focus,
+.btn-raised:not([disabled]):hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .4);
+  transform: translate3d(0, -1px, 0)
+}
+
+.shadow {
+  overflow: hidden;
+  position: relative;
+  transform: translate3d(0, 0, 0)
+}
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs
