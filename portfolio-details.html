@@ -221,26 +221,40 @@
     { name: 'Prakash S Bhat', subSystem: 'Project Manager', image: 'assets/img/team/Vaibhav Hebbal.webp' }];
 
     //var participantsField = document.getElementById("d2019")
-    for (var d = 0; d < teamMember.length; d++) {
+    for(var d=0;d<teamMember.length;d++)
+    {
       var div1 = document.createElement("div");
-      div1.className += "col-lg-3 col-md-4 col-sm-6 mb-4";
-      var div2 = document.createElement("div");
-      div2.classList.add("p-4");
-      var div3 = document.createElement("div");
-      div3.className += "row avatar w-100 white d-flex justify-content-center align-items-center";
-      var imag = document.createElement("img");
-      imag.className += "img-fluid rounded-circle z-depth-1";
-      imag.src = teamMember[d].image;
+      div1.className+="col-lg-3 col-md-4 col-sm-6 mb-4";
 
-      var memberName = document.createElement("div");
-      memberName.innerHTML += teamMember[d].name
+      var div2=document.createElement("div");
+      div2.className+="p-4";
+
+      var div3=document.createElement("div");
+      div3.className+="avatar w-100 white d-flex justify-content-center align-items-center";
+
+      var imag=document.createElement("img");
+      imag.className+="img-fluid rounded-circle z-depth-1";
+      imag.src+=teamMember[d].image;
+
+      var div4=document.createElement("div");
+      div4.className+="text-center mt-3";
+      
+      var memberName=document.createElement("h6");
+      memberName.className+="font-weight-bold pt-2";
+      memberName.innerHTML=teamMember[d].name;
+
+      var Sub=document.createElement("p");
+      Sub.className+="text-muted";
+      Sub.innerHTML+=teamMember[d].subSystem;
 
       div1.appendChild(div2);
       div2.appendChild(div3);
-      div3.append(imag);
-      div3.append(memberName)
-      document.getElementById("d2021").appendChild(div1)
-
+      div3.appendChild(imag);
+      div2.appendChild(div4);
+      div4.appendChild(memberName);
+      div4.appendChild(Sub);
+      document.getElementById("d2021").appendChild(div1);
+      
     }
   </script>
 
