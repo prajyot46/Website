@@ -4,19 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    
+       <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
-    <div class="bg" style="background: url(jayanth.png);">
-        <div class="det-rect">
-            <div class="name">Jayanth</div>
-            <div class="subsystem">BMS</div>
-            <div class="linkedin" onclick="window.open('http://www.linkedin.com')"></div>
-            <div class="email" onclick="window.open('http://www.linkedin.com')"></div>
+    <div class="container">
+        <div class="row d-flex justify-content-center" id="alumi">
+            
+            
         </div>
-       
-     
+        
     </div>
-    
+
+    <script>
+        var teamMember = [{ name: 'Jayanth', subSystem: 'BMS', image: 'jayanth.png', linkd: 'http://www.linkedin.com', gmail:'http://www.linkedin.com' },
+                          { name: 'Jayanth', subSystem: 'BMS', image: 'jayanth.png', linkd: 'http://www.linkedin.com', gmail:'http://www.linkedin.com'  },
+                          { name: 'Jayanth', subSystem: 'BMS', image: 'jayanth.png', linkd: 'http://www.linkedin.com', gmail:'http://www.linkedin.com'  },
+                          { name: 'Jayanth', subSystem: 'BMS', image: 'jayanth.png', linkd: 'http://www.linkedin.com', gmail:'http://www.linkedin.com'  },
+                          { name: 'Jayanth', subSystem: 'BMS', image: 'jayanth.png', linkd: 'http://www.linkedin.com', gmail:'http://www.linkedin.com'  }];
+
+        for(var d=0;d<teamMember.length;d++){
+            var div1 = document.createElement("div");
+            div1.className+="col-lg-3 col-md-4 col-sm-6 mb-4";
+
+            var div2=document.createElement("div");
+            div2.className+="p-4";
+
+            var div3 = document.createElement("div");
+            div3.className+="bg";
+            //div3.style.background="url(teamMember[d].image)";
+            var imag=document.createElement("img");
+            imag.className+="photo";
+            imag.src+=teamMember[d].image;
+
+
+            var div4 = document.createElement("div");
+            div4.className+="det-rect";
+
+            var div5 = document.createElement("div");
+            div5.className+="name";
+            div5.innerHTML = teamMember[d].name;
+
+            var div6 = document.createElement("div");
+            div6.className+="subsystem";
+            div6.innerHTML = teamMember[d].subSystem;
+
+            var div7 = document.createElement("div");
+            div7.className+="linkedin";
+            div7.setAttribute("onclick", "window.open('teamMember[d].linkd')")
+
+            var div8 = document.createElement("div");
+            div8.className+="email";
+
+            document.getElementById("alumi").appendChild(div1);
+            div1.appendChild(div2);
+            div2.appendChild(div3);
+            div3.appendChild(div4);
+            div3.appendChild(imag);
+            div4.appendChild(div5);
+            div4.appendChild(div6);
+            div4.appendChild(div7);
+            div4.appendChild(div8);
+
+   
+
+
+        }
+    </script>
+
+
 </body>
 </html>
