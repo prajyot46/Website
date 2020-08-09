@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top i:hover {
-  background: rgb(25, 243, 6);;
+  background: rgb(25, 243, 6);
   color: #fff;
 }
 
@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: rgb(0, 0, 0);
 }
 
 #preloader:before {
@@ -73,15 +73,21 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #cc1616;
+  border: 6px solid rgb(25, 243, 6);
   border-top-color: #efefef;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
 }
-
+#preloader img{
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  width: 100px;
+  height: 100px;
+}
 @-webkit-keyframes animate-preloader {
   0% {
     transform: rotate(0deg);
@@ -1007,7 +1013,7 @@ section {
 
 .contact .info-box i {
   font-size: 32px;
-  color: #cc1616;
+  color: rgb(25, 243, 6);
   border-radius: 50%;
   padding: 8px;
   border: 2px dotted #f5a0a0;
@@ -1034,7 +1040,7 @@ section {
 
 .contact .php-email-form .validate {
   display: none;
-  color: red;
+  color: rgb(25, 243, 6);;
   margin: 0 0 15px 0;
   font-weight: 400;
   font-size: 13px;
@@ -1072,7 +1078,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid rgb(25, 243, 6);;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
