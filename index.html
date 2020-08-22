@@ -32,7 +32,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
   <!-- =======================================================
   * Template Name: Day - v2.0.0
   * Template URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
@@ -72,9 +72,10 @@
         <ul>
           <li class="active"><a href="#hero">HOME</a></li>
           <li><a href="#about">ABOUT</a></li>
-          <li><a href="#portfolio">ACHIEVEMENT</a></li>
+          <li><a href="#achievements">ACHIEVEMENTS</a></li>
+          <li><a href="#timeline">TIMELINE</a></li>
           <li><a href="#team">TEAM</a></li>
-          <li><a href="#">SPONSORS</a></li>
+          <li><a href="#sponsers">SPONSORS</a></li>
           <li><a href="#contact">CONTACT</a></li>
 
         </ul>
@@ -87,8 +88,8 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
-      <h1>Welcome to Team Chimera</h1>
-      <!--<h2>We are team of talanted designers making websites with Bootstrap</h2>-->
+      <h1>Team Chimera</h1>
+      <h2>Official Formula Electric Team, RV College of Engineering</h2>
       <a href="#about" class="btn-get-started scrollto">Get Started</a>
     </div>
   </section><!-- End Hero -->
@@ -97,7 +98,7 @@
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
-      <div class="section-title" data-aos="fade-down" >
+      <div class="section-title" data-aos="fade-down">
         <span>ABOUT US</span>
         <h2>ABOUT US</h2>
       </div>
@@ -107,8 +108,8 @@
             <img src="assets/img/about.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
-            
-            <p class="text-faded text-justify" >
+
+            <p class="text-faded text-justify">
               Started in the year 2006, Team Chimera is the first group in India to successfully transcend into the
               automotive sector of hybrid
               and electric technology. We are a multi-dimensional team comprising of students with back grounds in
@@ -145,7 +146,7 @@
 
     <!-- ======= Why Us Section ======= -->
 
-    <section id="why-us" class="why-us">
+    <section id="achievements" class="achievements">
       <div class="section-title">
         <span>ACHIEVEMENTS</span>
         <h2>ACHIEVEMENTS</h2>
@@ -166,8 +167,7 @@
           <div class="col-lg-4 mt-4 mt-lg-4" data-aos="fade-up">
             <a href="#portfolioModal" class="portfolio-link" data-toggle="modal">
               <div class="box">
-                <img src="assets/img/img/portfolio/12.jpg" class="img-responsive" alt="" height="200"
-                  width="300">
+                <img src="assets/img/img/portfolio/12.jpg" class="img-responsive" alt="" height="200" width="300">
                 <span>01</span>
                 <h4>Water Powered Auto</h4>
                 <p>Our First Project</p>
@@ -276,7 +276,7 @@
     </section>
     <!-- End Why Us Section -->
 
-    <section id="Timelines">
+    <section id="timeline">
       <div class="timeline-container" id="timeline-1">
         <div class="timeline-header">
           <h1 class="timeline-header__title">TIMELINE </h1>
@@ -395,9 +395,9 @@
 
             var max, min;
             var pos = $(this).scrollTop();
-            console.log(pos);
+
             selectors.item.each(function (i) {
-              console.log(i)
+
               min = $(this).offset().top - 200;
               max = $(this).height() + $(this).offset().top;
               var that = $(this);
@@ -797,127 +797,35 @@
         <div class="container pt-1 my-5 z-depth-5">
           <section class="p-md-3 mx-md-5 text-center text-lg-left ">
             <h4 class="text-center mx-auto font-weight-bold mb-4 pb-2">LEADING TEAM</h4>
-            <div class="row d-flex justify-content-center">
-              <div class="col-lg-3 col-md-4 col-sm-6 mb-4 ">
-                <div class="p-4">
-                  <div class="avatar w-100 white d-flex justify-content-center align-items-center">
-                    <img src="assets/img/team/Vaibhav Hebbal.webp" class="img-fluid rounded-circle z-depth-5" />
-                  </div>
-                  <div class="text-center mt-3">
-                    <h6 class="font-weight-bold pt-2">Vaibhav Hebbal</h6>
-                    <p class="text-muted">
-                      <small>
-                        <i>Team Captain
-                        </i>
-                      </small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="p-4">
-                  <div class="avatar w-100 white d-flex justify-content-center align-items-center">
-                    <img src="assets/img/team/shreyasjsanil.webp" class="img-fluid rounded-circle z-depth-1" />
-                  </div>
-                  <div class="text-center mt-3">
-                    <h6 class="font-weight-bold pt-2">Shreyas J anil</h6>
-                    <p class="text-muted">
-                      <small>
-                        <i></i>
-                        Vice Captain</i>
-                      </small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="p-4">
-                  <div class="avatar w-100 white d-flex justify-content-center align-items-center">
-                    <img src="assets/img/team/Prakash S Bhat.webp" class="img-fluid rounded-circle z-depth-1" />
-                  </div>
-                  <div class="text-center mt-3">
-                    <h6 class="font-weight-bold pt-2">Prakash S Bhat</h6>
-                    <p class="text-muted">
-                      <small><i>Project Manager</i></small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="p-4">
-                  <div class="avatar w-100 white d-flex justify-content-center align-items-center">
-                    <img src="assets/img/team/Sushanth.webp" class="img-fluid rounded-circle z-depth-1" />
-                  </div>
-                  <div class="text-center mt-3">
-                    <h6 class="font-weight-bold pt-2">Shushant S Joshi</h6>
-                    <p class="text-muted">
-                      <small><i>Project Manager</i></small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="p-4">
-                  <div class="avatar w-100 white d-flex justify-content-center align-items-center">
-                    <img src="assets/img/team/bharadwaj_car.png" class="img-fluid rounded-circle z-depth-1" />
-                  </div>
-                  <div class="text-center mt-3">
-                    <h6 class="font-weight-bold pt-2">Bharadwaj</h6>
-                    <p class="text-muted">
-                      <small><i>Electrical Head and ESO</i></small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="p-4">
-                  <div class="avatar w-100 white d-flex justify-content-center align-items-center">
-                    <img src="assets/img/team/pavansantosh.webp" class="img-fluid rounded-circle z-depth-1" />
-                  </div>
-                  <div class="text-center mt-3">
-                    <h6 class="font-weight-bold pt-2">Pavan Santhosh</h6>
-                    <p class="text-muted">
-                      <small><i>Electrical Head and ESO</i></small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="p-4">
-                  <div class="avatar w-100 white d-flex justify-content-center align-items-center">
-                    <img src="assets/img/team/Kartik Sharma.webp" class="img-fluid rounded-circle z-depth-1" />
-                  </div>
-                  <div class="text-center mt-3">
-                    <h6 class="font-weight-bold pt-2">Karthik Sharma</h6>
-                    <p class="text-muted">
-                      <small><i>Mechanical Head</i></small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="p-4">
-                  <div class="avatar w-100 white d-flex justify-content-center align-items-center">
-                    <img src="assets/img/team/roopak.webp" class="img-fluid rounded-circle z-depth-1" />
-                  </div>
-                  <div class="text-center mt-3">
-                    <h6 class="font-weight-bold pt-2">Roopak N</h6>
-                    <p class="text-muted">
-                      <small><i>Finance Head</i></small>
-                    </p>
+            <div id="leadingTeamContainer">
+              <div class="row">
+                <div v-for="(member, index) in leadingTeam" class="col-lg-3 col-md-4 col-sm-6 mb-4">
+
+                  <div class="p-4">
+                    <div class="avatar w-100 white d-flex justify-content-center align-items-center">
+                      <img v-bind:src="member.image" class="img-fluid rounded-circle z-depth-1" />
+                    </div>
+                    <div class="text-center mt-3">
+                      <h6 class="font-weight-bold pt-2">{{ member.name }}</h6>
+                      <p class="text-muted">
+                        <small><i>{{ member.portfolio }}</i></small>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="button_container">
-              <a href="/portfolio-details.html"><button class="btn btn-raised"><span>VIEW FULL TEAM</span></button></a>
+              <a href="/portfolio-details.html"><button class="btn btn-raised"><span>VIEW FULL
+                    TEAM</span></button></a>
             </div>
             <br>
             <br>
             <div class="button_container">
-              <a href="/alumini-test/index.html"><button class="btn btn-raised"><span>VIEW OUR ALUMNI   </span></button></a>
+              <a href="/alumini-test/index.html"><button class="btn btn-raised"><span>VIEW OUR ALUMNI
+                  </span></button></a>
             </div>
-            
+
           </section>
         </div>
       </div>
@@ -926,141 +834,55 @@
 
     <!--======SPONSORS SECTION======-->
 
-    <section id="clients" class="clients">
+    <section id="sponsers" class="sponsers">
       <div class="section-title">
         <span>SPONSORS</span>
         <h2>SPONSORS</h2>
         <H5 style="color:rgb(25, 243, 6);">OUR BACKBONE</H5>
       </div>
-      <div class="container" data-aos="zoom-in">
-
+      <div id="sponserContainer" class="container" data-aos="zoom-in">
+        <h3 class="section-heading wow bounceIn">Platinum Sponsers</h3>
         <div class="row d-flex align-items-center">
 
-          <div class="col-lg-3 col-md-7 col-10">
-            <a target="_blank" href="http://www.solidworks.in/Default.htm">
-              <img src="assets/img/clients/DS_solidworks.jpg" class="img-responsive" alt="img-responsive"></a>
+          <div v-for="sponser in platinumSponsers" class="col-lg-3 col-md-7 col-10">
+            <a target="_blank" v-bind:href="sponser.link">
+              <img v-bind:src="sponser.image" class="img-responsive" alt="img-responsive"></a>
           </div>
 
-          <div class="col-lg-3 col-md-6 col-9">
-            <a target="_blank" href="https://www.bender.org/">
-              <img src="assets/img/clients/bender.webp" class="img-fluid" alt=""></a>
-          </div>
+        </div>
 
-          <div class="col-lg-3 col-md-6 col-9">
-            <a target="_blank" href="https://www.zuken.com/en/">
-              <img src="assets/img/clients/zuken.webp" class="img-fluid" alt=""></a>
-          </div>
+        <h3 class="section-heading wow bounceIn">Gold Sponsers</h3>
+        <div class="row d-flex align-items-center">
 
-          <div class="col-lg-3 col-md-6 col-9">
-            <a target="_blank" href="https://www.maxongroup.com/maxon/view/content/index">
-              <img src="assets/img/clients/maxon.webp" class="img-fluid" alt=""></a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-9">
-            <a target="_blank" href="http://elleys.net/">
-              <img src="assets/img/clients/elleys.webp" class="img-fluid" alt=""></a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-9">
-            <a target="_blank" href="https://norwoodmodular.com/">
-              <img src="assets/img/clients/norwood.webp" class="img-fluid" alt=""></a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-9">
-            <a target="_blank" href="https://www.idp.com/global">
-              <img src="assets/img/clients/idp.webp" class="img-fluid" alt=""></a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-9">
-            <a target="_blank" href="https://rvce.edu.in/">
-              <img src="assets/img/clients/rv.webp" class="img-fluid" alt=""></a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-9">
-            <a target="_blank" href="https://phytec.com/">
-              <img src="assets/img/clients/phytec.webp" class="img-fluid" alt=""></a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-9">
-            <a target="_blank" href="http://www.analog.com/en/index.html">
-              <img src="assets/img/clients/analogdevices.webp" class="img-fluid" alt=""></a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-9">
-            <a target="_blank" href="http://www.te.com/global-en/home.html">
-              <img src="assets/img/clients/teconnectivity.webp" class="img-fluid" alt=""></a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-9">
-            <a target="_blank" href="http://coltonweld.com/">
-              <img src="assets/img/clients/colthon.webp" class="img-fluid" alt=""></a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-9">
-            <a target="_blank" href="http://agnimotors.in/">
-              <img src="assets/img/clients/agni.webp" class="img-fluid" alt=""></a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-9">
-            <a target="_blank" href="http://www.prakhyath.com/index.html">
-              <img src="assets/img/clients/prakyath.webp" class="img-fluid" alt=""></a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-9">
-            <a target="_blank" href="https://www.sensata.com/">
-              <img src="assets/img/clients/sensata.webp" class="img-fluid" alt=""></a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-9">
-            <a target="_blank" href="http://www.gigavac.com/">
-              <img src="assets/img/clients/gigavac.jpg" class="img-fluid" alt=""></a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-9">
-            <a target="_blank" href="http://www.sireeshauto.com/">
-              <img src="assets/img/clients/sireeshauto.webp" class="img-fluid" alt=""></a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-9">
-            <a target="_blank" href="https://www.ansys.com/en-in">
-              <img src="assets/img/clients/ansys.webp" class="img-fluid" alt=""></a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-9">
-            <a target="_blank" href="https://www.altair.com/">
-              <img src="assets/img/clients/altair.jpg" class="img-fluid" alt=""></a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-9">
-            <a target="_blank" href="=https://www.igus.com/">
-              <img src="assets/img/clients/igus.webp" class="img-fluid" alt=""></a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-9">
-            <a target="_blank" href="http://www.accordlaser.com/index.php">
-              <img src="assets/img/clients/accord.png" class="img-fluid" alt=""></a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-9">
-            <a target="_blank" href="https://www.mathworks.com/products/matlab.html">
-              <img src="assets/img/clients/MATLAB.png" class="img-fluid" alt=""></a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-9">
-            <a target="_blank" href="http://www.airindia.in/">
-              <img src="assets/img/clients/airindia.png" class="img-fluid" alt=""></a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-9">
-            <a target="_blank" href="https://azure.microsoft.com/en-in/">
-              <img src="assets/img/clients/azure.png" class="img-fluid" alt=""></a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-9">
-            <a target="_blank" href="https://global.abb/group">
-              <img src="assets/img/clients/abb.png" class="img-fluid" alt=""></a></a>
+          <div v-for="sponser in goldSponsers" class="col-lg-3 col-md-7 col-10">
+            <a target="_blank" v-bind:href="sponser.link">
+              <img v-bind:src="sponser.image" class="img-responsive" alt="img-responsive"></a>
           </div>
         </div>
+
+
+        <h3 class="section-heading wow bounceIn">Bronze Sponsers</h3>
+        <div class="row d-flex align-items-center">
+
+          <div v-for="sponser in bronzeSponsers" class="col-lg-3 col-md-7 col-10">
+            <a target="_blank" v-bind:href="sponser.link">
+              <img v-bind:src="sponser.image" class="img-responsive" alt="img-responsive"></a>
+          </div>
+
+        </div>
+
+
+        <h3 class="section-heading wow bounceIn">Technical Sponsers</h3>
+        <div class="row d-flex align-items-center">
+
+          <div v-for="sponser in technicalSponsers" class="col-lg-3 col-md-7 col-10">
+            <a target="_blank" v-bind:href="sponser.link">
+              <img v-bind:src="sponser.image" class="img-responsive" alt="img-responsive"></a>
+          </div>
+
+        </div>
+
+
       </div>
     </section>
 
@@ -1116,12 +938,30 @@
               frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
           </div>
 
-           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="col-lg-6">
+
+            <form action="https://formspree.io/mgenbplr" method="POST">
+              <label>
+                Your email:
+                <input type="text" name="_replyto">
+              </label>
+              <label>
+                Your message:
+                <textarea name="message"></textarea>
+              </label>
+
+              <!-- your other form fields go here -->
+
+              <button type="submit">Send</button>
+            </form>
+
+
+
+            <form action="https://formspree.io/mgenbplr" method="POST" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="_replyto" id="name" placeholder="Your Name" data-rule="minlen:4"
+                    data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group">
@@ -1130,11 +970,7 @@
                   <div class="validate"></div>
                 </div>
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                  data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
+
               <div class="form-group">
                 <textarea class="form-control" name="message" rows="5" data-rule="required"
                   data-msg="Please write something for us" placeholder="Message"></textarea>
@@ -1224,7 +1060,7 @@
         </span>
       </div>
       <div class="credits">
-        <p class="text-faded" style="margin-top: 1%">Website developed by <font >Team Chimera</font>
+        <p class="text-faded" style="margin-top: 1%">Website developed by <font>Team Chimera</font>
         </p>
       </div>
     </div>
@@ -1252,8 +1088,8 @@
                 organized by the Dutch NGO Enviu, between the 22nd and 25th of July 2009. Our business plan
                 was adjudged the best and the project overall finished second. Our Business plan was one
                 of the national finalists of Bloomberg UTVi Idea League B- Plan Competition. </p>
-              <button  class="btn btn-raised " data-dismiss="modal"><span> Close
-                Project</span></button>
+              <button class="btn btn-raised " data-dismiss="modal"><span> Close
+                  Project</span></button>
             </div>
           </div>
         </div>
@@ -1263,7 +1099,7 @@
 
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-  <div id="preloader"><img src="assets/img/logo3.png" ></div>
+  <div id="preloader"><img src="assets/img/logo3.png"></div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -1275,6 +1111,8 @@
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
 
+  <script src="assets/js/leadingteam.js"></script>
+  <script src="assets/js/sponsors.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 

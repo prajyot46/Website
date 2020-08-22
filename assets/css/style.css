@@ -597,24 +597,24 @@ section {
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
-.why-us {
+.achievements {
   padding-top: 0;
 }
 
-.why-us .box {
+.achievements .box {
   padding: 50px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 0.3s;
 }
 
-.why-us .box span {
+.achievements .box span {
   display: block;
   font-size: 28px;
   font-weight: 700;
   color: rgb(25, 243, 6);
 }
 
-.why-us .box h4 {
+.achievements .box h4 {
   font-size: 24px;
   font-weight: 600;
   padding: 0;
@@ -622,33 +622,33 @@ section {
   color: #191919;
 }
 
-.why-us .box p {
+.achievements .box p {
   color: #aaaaaa;
   font-size: 15px;
   margin: 0;
   padding: 0;
 }
 
-.why-us .box:hover {
+.achievements .box:hover {
   background: rgb(255, 255, 255);;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
 
-.why-us .box:hover span, .why-us .box:hover h4, .why-us .box:hover p {
+.achievements .box:hover span, .achievements .box:hover h4, .achievements .box:hover p {
   color: rgb(4, 155, 29);
 }
 
 /*--------------------------------------------------------------
-# Clients
+# sponsers
 --------------------------------------------------------------*/
-.clients {
+.sponsers {
   background: white;
   padding: 15px 0;
   text-align: center;
 }
 
-.clients img {
+.sponsers img {
   width: 50%;
   -webkit-filter: grayscale(100);
   filter: grayscale(100);
@@ -657,14 +657,14 @@ section {
   padding: 15px 0;
 }
 
-.clients img:hover {
+.sponsers img:hover {
   -webkit-filter: none;
   filter: none;
   transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
-  .clients img {
+  .sponsers img {
     width: 40%;
   }
 }
