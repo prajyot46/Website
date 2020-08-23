@@ -1,159 +1,159 @@
- 
- 
-      
-      <div class="modal-header">
-        <h5 class="modal-title">Our Team</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-   
-  <div class="modal-body" id="teamdata">
-    <div class="button_container" onclick="ShowAndHide('d2021')">
-      <button class="btn btn-raised"><span>Batch 2021</span></button>
-    </div>
 
-    <div class="container pt-1 my-5 z-depth-5" style="display:none" id="d2021">
-      <section class="p-md-3 mx-md-5 text-center text-lg-left ">
-        <div class="row d-flex justify-content-center" id="d2021">
-          <div class="row">
-            <div v-for="(member, index) in team2021" class="col-lg-3 col-md-4 col-sm-6 mb-4">
-
-              <div class="p-4">
-                <div class="avatar w-100 white d-flex justify-content-center align-items-center">
-                  <img loading="lazy" v-bind:src="member.image" width="200px" class="img-fluid rounded-circle z-depth-1" />
-                </div>
-                <div class="text-center mt-3">
-                  <h6 class="font-weight-bold pt-2">{{ member.name }}</h6>
-                  <p class="text-muted">
-                    <small><i>{{ member.subsystem }}</i></small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
-    </div>
-
-
-    </br>
-    <div class="button_container">
-      <button class="btn btn-raised" onclick="ShowAndHide('d2022')"><span>Batch 2022</span></button>
-    </div>
-
-    <div class="container pt-1 my-5 z-depth-5" style="display:none" id="d2022">
-      <section class="p-md-3 mx-md-5 text-center text-lg-left ">
-        <div class="row d-flex justify-content-center" id="d2022">
-          <div class="row">
-            <div v-for="(member, index) in team2022" class="col-lg-3 col-md-4 col-sm-6 mb-4">
-
-              <div class="p-4">
-                <div class="avatar w-100 white d-flex justify-content-center align-items-center">
-                  <img loading="lazy" v-bind:src="member.image" width="200px" class="img-fluid rounded-circle z-depth-1" />
-                </div>
-                <div class="text-center mt-3">
-                  <h6 class="font-weight-bold pt-2">{{ member.name }}</h6>
-                  <p class="text-muted">
-                    <small><i>{{ member.subsystem }}</i></small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
-    </div>
-    </br>
-
-
-
-    <div class="button_container">
-      <button class="btn btn-raised" onclick="ShowAndHide('d2023')"><span>Batch 2023</span></button>
-    </div>
-    <div class="container pt-1 my-5 z-depth-5" style="display:none" id="d2023">
-      <section class="p-md-3 mx-md-5 text-center text-lg-left ">
-        <div class="row d-flex justify-content-center" id="d2023">
-          <div class="row">
-            <div v-for="(member, index) in team2023" class="col-lg-3 col-md-4 col-sm-6 mb-4">
-
-              <div class="p-4">
-                <div class="avatar w-100 white d-flex justify-content-center align-items-center">
-                  <img loading="lazy" v-bind:src="member.image" width="200px" class="img-fluid rounded-circle z-depth-1" />
-                </div>
-                <div class="text-center mt-3">
-                  <h6 class="font-weight-bold pt-2">{{ member.name }}</h6>
-                  <p class="text-muted">
-                    <small><i>{{ member.subsystem }}</i></small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
-    </div>
+<div class="modal-header">
+  <h5 class="modal-title">Our Team</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body" id="teamdata">
+  <div class="button_container" onclick="ShowAndHide('d2021')">
+    <button class="btn btn-raised"><span>Batch 2021</span></button>
   </div>
-   
 
-  </main> 
- <script src="/assets/js/teamdata.js"></script>
-  <script>
-    function ShowAndHide(elementId) {
-      console.log(elementId)
-      var x = document.getElementById(elementId);
-      
-      if (x.style.display == 'none') {
-        x.style.display = 'block';
-      } else {
-        x.style.display = 'none';
-      }
+  <div class="container pt-1 my-5 z-depth-5" style="display:none" id="d2021">
+    <section class="p-md-3 mx-md-5 text-center text-lg-left ">
+      <div class="row d-flex justify-content-center" id="d2021">
+        <div class="row">
+          <div v-for="(member, index) in team2021" class="col-lg-3 col-md-4 col-sm-6 mb-4">
+
+            <div class="p-4">
+              <div class="avatar w-100 white d-flex justify-content-center align-items-center">
+                <img loading="lazy" v-bind:src="member.image" width="200px"
+                  class="img-fluid rounded-circle z-depth-1" />
+              </div>
+              <div class="text-center mt-3">
+                <h6 class="font-weight-bold pt-2">{{ member.name }}</h6>
+                <p class="text-muted">
+                  <small><i>{{ member.subsystem }}</i></small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+
+  </br>
+  <div class="button_container">
+    <button class="btn btn-raised" onclick="ShowAndHide('d2022')"><span>Batch 2022</span></button>
+  </div>
+
+  <div class="container pt-1 my-5 z-depth-5" style="display:none" id="d2022">
+    <section class="p-md-3 mx-md-5 text-center text-lg-left ">
+      <div class="row d-flex justify-content-center" id="d2022">
+        <div class="row">
+          <div v-for="(member, index) in team2022" class="col-lg-3 col-md-4 col-sm-6 mb-4">
+
+            <div class="p-4">
+              <div class="avatar w-100 white d-flex justify-content-center align-items-center">
+                <img loading="lazy" v-bind:src="member.image" width="200px"
+                  class="img-fluid rounded-circle z-depth-1" />
+              </div>
+              <div class="text-center mt-3">
+                <h6 class="font-weight-bold pt-2">{{ member.name }}</h6>
+                <p class="text-muted">
+                  <small><i>{{ member.subsystem }}</i></small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+  </br>
+
+
+
+  <div class="button_container">
+    <button class="btn btn-raised" onclick="ShowAndHide('d2023')"><span>Batch 2023</span></button>
+  </div>
+  <div class="container pt-1 my-5 z-depth-5" style="display:none" id="d2023">
+    <section class="p-md-3 mx-md-5 text-center text-lg-left ">
+      <div class="row d-flex justify-content-center" id="d2023">
+        <div class="row">
+          <div v-for="(member, index) in team2023" class="col-lg-3 col-md-4 col-sm-6 mb-4">
+
+            <div class="p-4">
+              <div class="avatar w-100 white d-flex justify-content-center align-items-center">
+                <img loading="lazy" v-bind:src="member.image" width="200px"
+                  class="img-fluid rounded-circle z-depth-1" />
+              </div>
+              <div class="text-center mt-3">
+                <h6 class="font-weight-bold pt-2">{{ member.name }}</h6>
+                <p class="text-muted">
+                  <small><i>{{ member.subsystem }}</i></small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+</div>
+
+
+</main>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+<script src="/assets/js/teamdata.js"></script>
+<script>
+  function ShowAndHide(elementId) {
+    console.log(elementId)
+    var x = document.getElementById(elementId);
+
+    if (x.style.display == 'none') {
+      x.style.display = 'block';
+    } else {
+      x.style.display = 'none';
     }
-  </script>
+  }
+</script>
 
-  <script>
-    var teamMember = [];
+<script>
+  var teamMember = [];
 
-    //var participantsField = document.getElementById("d2019")
-    for(var d=0;d<teamMember.length;d++)
-    {
-      var div1 = document.createElement("div");
-      div1.className+="col-lg-3 col-md-4 col-sm-6 mb-4";
+  //var participantsField = document.getElementById("d2019")
+  for (var d = 0; d < teamMember.length; d++) {
+    var div1 = document.createElement("div");
+    div1.className += "col-lg-3 col-md-4 col-sm-6 mb-4";
 
-      var div2=document.createElement("div");
-      div2.className+="p-4";
+    var div2 = document.createElement("div");
+    div2.className += "p-4";
 
-      var div3=document.createElement("div");
-      div3.className+="avatar w-100 white d-flex justify-content-center align-items-center";
+    var div3 = document.createElement("div");
+    div3.className += "avatar w-100 white d-flex justify-content-center align-items-center";
 
-      var imag=document.createElement("img");
-      imag.className+="img-fluid rounded-circle z-depth-1";
-      imag.src+=teamMember[d].image;
+    var imag = document.createElement("img");
+    imag.className += "img-fluid rounded-circle z-depth-1";
+    imag.src += teamMember[d].image;
 
-      var div4=document.createElement("div");
-      div4.className+="text-center mt-3";
-      
-      var memberName=document.createElement("h6");
-      memberName.className+="font-weight-bold pt-2";
-      memberName.innerHTML=teamMember[d].name;
+    var div4 = document.createElement("div");
+    div4.className += "text-center mt-3";
 
-      var Sub=document.createElement("p");
-      Sub.className+="text-muted";
-      Sub.innerHTML+=teamMember[d].subSystem;
+    var memberName = document.createElement("h6");
+    memberName.className += "font-weight-bold pt-2";
+    memberName.innerHTML = teamMember[d].name;
 
-      div1.appendChild(div2);
-      div2.appendChild(div3);
-      div3.appendChild(imag);
-      div2.appendChild(div4);
-      div4.appendChild(memberName);
-      div4.appendChild(Sub);
-      document.getElementById("d2021").appendChild(div1);
-      
-    }
-  </script>
+    var Sub = document.createElement("p");
+    Sub.className += "text-muted";
+    Sub.innerHTML += teamMember[d].subSystem;
+
+    div1.appendChild(div2);
+    div2.appendChild(div3);
+    div3.appendChild(imag);
+    div2.appendChild(div4);
+    div4.appendChild(memberName);
+    div4.appendChild(Sub);
+    document.getElementById("d2021").appendChild(div1);
+
+  }
+</script>
 
 
 </body>
