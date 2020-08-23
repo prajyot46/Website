@@ -105,7 +105,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
-            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/450660995?color=c9ff23" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe loading="lazy" src="https://player.vimeo.com/video/450660995?color=c9ff23" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script async src="https://player.vimeo.com/api/player.js"></script>
             <p>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
@@ -264,7 +264,7 @@
           <div class="col-lg-4 mt-4 mt-lg-4" data-aos="fade-up" data-aos-delay="300">
             <a href="#portfolioModal" class="portfolio-link" data-toggle="modal">
               <div class="box">
-                <img src="img/portfolio/green.jpg" class="img-responsive" alt="" height="200" width="300">
+                <img src="assets/img/portfolio/green.jpg" class="img-responsive" alt="" height="200" width="300">
                 <span>03</span>
                 <h4>Formula Bharat 2019</h4>
                 <p>1st in Business Presentation</p>
@@ -371,7 +371,7 @@
       </div>
     </section>
 
-    <script src="TeamChimera.js"></script>
+    <!-- <script src="TeamChimera.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script>
       (function ($) {
@@ -804,7 +804,7 @@
 
                   <div class="p-4">
                     <div class="avatar w-100 white d-flex justify-content-center align-items-center">
-                      <img v-bind:src="member.image" class="img-fluid rounded-circle z-depth-1" />
+                      <img loading="lazy" v-bind:src="member.image" width="200px" class="img-fluid rounded-circle z-depth-1" />
                     </div>
                     <div class="text-center mt-3">
                       <h6 class="font-weight-bold pt-2">{{ member.name }}</h6>
@@ -817,8 +817,14 @@
               </div>
             </div>
             <div class="button_container">
-              <a href="/portfolio-details.html"><button class="btn btn-raised"><span>VIEW FULL
+              <a href="fullteam.html" class="fullteam-modal" ><button class="btn btn-raised"><span>VIEW FULL
                     TEAM</span></button></a>
+                    <div class="modal fade text-center" id="fullTeamModal">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                        </div>
+                      </div>
+                    </div>
             </div>
             <br>
             <br>
@@ -826,7 +832,7 @@
               <a href="/alumini-test/index.html"><button class="btn btn-raised"><span>VIEW OUR ALUMNI
                   </span></button></a>
             </div>
-
+          
           </section>
         </div>
       </div>
@@ -847,7 +853,7 @@
 
           <div v-for="sponser in platinumSponsers" class="col-lg-3 col-md-7 col-10">
             <a target="_blank" v-bind:href="sponser.link">
-              <img v-bind:src="sponser.image" class="img-responsive" alt="img-responsive"></a>
+              <img loading="lazy" v-bind:src="sponser.image" class="img-responsive" alt="img-responsive"></a>
           </div>
 
         </div>
@@ -857,7 +863,7 @@
 
           <div v-for="sponser in goldSponsers" class="col-lg-3 col-md-7 col-10">
             <a target="_blank" v-bind:href="sponser.link">
-              <img v-bind:src="sponser.image" class="img-responsive" alt="img-responsive"></a>
+              <img loading="lazy" v-bind:src="sponser.image" class="img-responsive" alt="img-responsive"></a>
           </div>
         </div>
 
@@ -867,7 +873,7 @@
 
           <div v-for="sponser in bronzeSponsers" class="col-lg-3 col-md-7 col-10">
             <a target="_blank" v-bind:href="sponser.link">
-              <img v-bind:src="sponser.image" class="img-responsive" alt="img-responsive"></a>
+              <img loading="lazy" v-bind:src="sponser.image" class="img-responsive" alt="img-responsive"></a>
           </div>
 
         </div>
@@ -878,7 +884,7 @@
 
           <div v-for="sponser in technicalSponsers" class="col-lg-3 col-md-7 col-10">
             <a target="_blank" v-bind:href="sponser.link">
-              <img v-bind:src="sponser.image" class="img-responsive" alt="img-responsive"></a>
+              <img loading="lazy" v-bind:src="sponser.image" class="img-responsive" alt="img-responsive"></a>
           </div>
 
         </div>
@@ -934,39 +940,20 @@
         <div class="row" data-aos="fade-up">
 
           <div class="col-lg-6 ">
-            <iframe class="mb-4 mb-lg-0"
+            <iframe loading="lazy" class="mb-4 mb-lg-0"
               src="https://maps.google.com/maps?q=rv%20college%20of%20engineering&t=&z=13&ie=UTF8&iwloc=&output=embed"
               frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
           </div>
 
           <div class="col-lg-6">
-
-            <form action="https://formspree.io/mgenbplr" method="POST">
-              <label>
-                Your email:
-                <input type="text" name="_replyto">
-              </label>
-              <label>
-                Your message:
-                <textarea name="message"></textarea>
-              </label>
-
-              <!-- your other form fields go here -->
-
-              <button type="submit">Send</button>
-            </form>
+ 
 
 
-
-            <form action="https://formspree.io/mgenbplr" method="POST" role="form" class="php-email-form">
+            <form action="https://formspree.io/mgenbplr" method="POST" role="form">
               <div class="form-row">
+                
                 <div class="col-md-6 form-group">
-                  <input type="text" name="_replyto" id="name" placeholder="Your Name" data-rule="minlen:4"
-                    data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                  <input type="email" name="_replyto" class="form-control" name="email" id="email" placeholder="Your Email"
                     data-rule="email" data-msg="Please enter a valid email" />
                   <div class="validate"></div>
                 </div>
@@ -977,11 +964,7 @@
                   data-msg="Please write something for us" placeholder="Message"></textarea>
                 <div class="validate"></div>
               </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
+            
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
@@ -1116,6 +1099,14 @@
   <script src="assets/js/sponsors.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+
+$('.fullteam-modal').on('click', function(e){
+      e.preventDefault();
+      $('#fullTeamModal').modal('show').find('.modal-content').load($(this).attr('href'));
+    });
+  </script>
+
 
 </body>
 
