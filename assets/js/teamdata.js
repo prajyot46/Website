@@ -1,4 +1,4 @@
-var teamData = new Vue({
+var teamJs = new Vue({
 	el: "#teamdata",
 	data: {
 		team2021: [
