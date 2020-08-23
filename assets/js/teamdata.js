@@ -13,7 +13,7 @@ var teamJs = new Vue({
 				subsystem: "Vice Captain",
 			},
 			{
-				image: "assets/img/team/bharadwaj_car.webp",
+				image: "assets/img/team/bharadwaj.webp",
 				name: "Raghava Ram Bharadwaj",
 				subsystem: "Electrical Head and ESO",
 			},
