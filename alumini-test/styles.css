@@ -21,7 +21,9 @@
     height:100vh ;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
+    margin: 0px;
 }
 .Our-Alumni h1
 {   
@@ -31,6 +33,7 @@
     transform: translate(-50%,50%);
     font-size:80px;
     font-weight: 700;
+    text-shadow: 2px 2px black;
     color: #fff;
 
 }
@@ -39,6 +42,7 @@
     .Our-Alumni h1{
         font-size: 28px;
         text-align: center;
+        margin: 0px;
         }
 }
 #Description p

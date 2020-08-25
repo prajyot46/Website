@@ -39,7 +39,7 @@ h6 {
 	display: none;
 	right: 15px;
 	bottom: 15px;
-	z-index: 99999;
+	z-index: 2;
 }
 
 .back-to-top i {
@@ -175,7 +175,7 @@ h6 {
 #header {
 	background: rgba(52, 58, 64, 0.2);
 	transition: all 0.5s;
-	z-index: 997;
+	z-index: 99;
 	top: 40px;
 }
 
@@ -337,7 +337,7 @@ h6 {
 	position: fixed;
 	right: 15px;
 	top: 15px;
-	z-index: 9998;
+	z-index: 100;
 	border: 0;
 	background: none;
 	font-size: 24px;
@@ -645,11 +645,7 @@ section {
 	box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
 
-.achievements .box:hover span,
-.achievements .box:hover h4,
-.achievements .box:hover p {
-	color: rgb(4, 155, 29);
-}
+
 
 /*--------------------------------------------------------------
 # sponsers
