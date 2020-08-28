@@ -1,206 +1,187 @@
-#navbar
-{
-    position: sticky;
-    top: 0px;
-    padding: 0 ;
-    background:none;
-    z-index: 1;
-    
+#navbar {
+	position: sticky;
+	top: 0px;
+	padding: 0;
+	background: none;
+	z-index: 1;
 }
 
-.navbar-brand img 
-{
-    height: 50px;
-    padding-left:6px ;
-    background-size:cover ;
+.navbar-brand img {
+	height: 50px;
+	padding-left: 6px;
+	background-size: cover;
 }
-#Cover-Photo
-{
-    margin-top: -75px;
-    background-image:url(../assets/img/green2_highres.jpg) ;
-    height:100vh ;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    margin: 0px;
+#Cover-Photo {
+	margin-top: -75px;
+	background-image: url(../assets/img/green2_highres.jpg);
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	margin: 0px;
 }
-.Our-Alumni h1
-{   
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,50%);
-    font-size:80px;
-    font-weight: 700;
-    text-shadow: 2px 2px black;
-    color: #fff;
-
+.Our-Alumni h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	font-size: 80px;
+	font-weight: 700;
+	text-shadow: 2px 2px black;
+	color: #fff;
 }
-@media (max-width: 768px)
-{
-    .Our-Alumni h1{
-        font-size: 28px;
-        text-align: center;
-        margin: 0px;
-        }
+@media (max-width: 768px) {
+	.Our-Alumni h1 {
+		font-size: 28px;
+		text-align: center;
+		margin: 0px;
+	}
 }
-#Description p
-{
-    margin: 0px 300px 0 300px  ;
-    text-align: justify;
-    text-justify: inter-word;
+#Description p {
+	margin: 0px 300px 0 300px;
+	text-align: justify;
+	text-justify: inter-word;
 }
-@media (max-width:768px){
-    #Description p{
-        margin:10px 40px 0 40px;
-    }
+@media (max-width: 768px) {
+	#Description p {
+		margin: 10px 40px 0 40px;
+	}
 }
-.Thank-you
-{
-    margin-top: 10px!important;
-    text-align: center!important;
-    text-justify: inter-word;
-    font-size: 20px;
-    font-weight: bold;
-    font-style: italic;
-    font-family: monospace;
+.Thank-you {
+	margin-top: 10px !important;
+	text-align: center !important;
+	text-justify: inter-word;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+	font-family: monospace;
 }
 section {
-    padding: 60px 0;
-    overflow: hidden;
-  }
-  
-  .section-title {
-    text-align: center;
-    padding: 30px 0;
-    position: relative;
-  }
-  
-  .section-title h2 {
-    font-size: 32px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    padding-bottom: 0;
-    color: #191919;
-    position: relative;
-    z-index: 2;
-  }
-  
-  .section-title span {
-    position: absolute;
-    top: 30px;
-    color: #f4f4f4;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    font-weight: 700;
-    font-size: 52px;
-    text-transform: uppercase;
-    line-height: 0;
-  }
-  
-  .section-title p {
-    margin-bottom: 0;
-    position: relative;
-    z-index: 2;
-  }
-  
-  @media (max-width: 575px) {
-    .section-title h2 {
-      font-size: 28px;
-      margin-bottom: 15px;
-    }
-    .section-title span {
-      font-size: 38px;
-    }
-  }
-  
-
-.bg
-{
-width: 250px;
-height: 250px;
-
-}
- 
-
-.det-rect{
-position: relative;
-width: 250px;
-height: 70px;
- 
-top: 200px;
-
-background: #000000;
+	padding: 60px 0;
+	overflow: hidden;
 }
 
-.photo{
-  
-  margin-top: -90px;
-}
- 
-
-.email{
-position: absolute;
-width: 38px;
-height: 38px;
- 
-top:50px;
-transition: 0.3s;
-left:155px;
-background: url(email.png);
-border-radius: 112.5px;
-}
-.email:hover{
-    transform: scale(1.1);
+.section-title {
+	text-align: center;
+	padding: 30px 0;
+	position: relative;
 }
 
-.linkedin{
-    position: absolute;
-    width: 38px;
-    height: 38px;
-    top:50px;
-    left:200px;
-    background: url(linkedin.png);
-    background-size: cover;
-    transition: 0.3s;
-    
-}
-.linkedin:hover{
-    transform: scale(1.1);
+.section-title h2 {
+	font-size: 32px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	padding-bottom: 0;
+	color: #191919;
+	position: relative;
+	z-index: 2;
 }
 
- 
-
-.name{
-    position: relative;
-    width: 116px;
-    height: 28px;
-    padding: 5px;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    
-    color: #FFFFFF;
-    
+.section-title span {
+	position: absolute;
+	top: 30px;
+	color: #f4f4f4;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	font-weight: 700;
+	font-size: 52px;
+	text-transform: uppercase;
+	line-height: 0;
 }
 
-.subsystem{
-    position: relative;
-width: 49px;
-height: 15px;
- 
-padding: 5px;
-font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 13px;
-line-height: 15px;
+.section-title p {
+	margin-bottom: 0;
+	position: relative;
+	z-index: 2;
+}
 
-color: #FFFFFF;
+@media (max-width: 575px) {
+	.section-title h2 {
+		font-size: 28px;
+		margin-bottom: 15px;
+	}
+	.section-title span {
+		font-size: 38px;
+	}
+}
+
+.bg {
+	width: 250px;
+	height: 250px;
+}
+
+.det-rect {
+	position: relative;
+	width: 250px;
+	height: 70px;
+
+	top: 200px;
+
+	background: #000000;
+}
+
+.photo {
+	margin-top: -90px;
+}
+
+.email {
+	position: absolute;
+	width: 38px;
+	height: 38px;
+
+	top: 50px;
+	transition: 0.3s;
+	left: 155px;
+	background: url(email.png);
+	border-radius: 112.5px;
+}
+.email:hover {
+	transform: scale(1.1);
+}
+
+.linkedin {
+	position: absolute;
+	width: 38px;
+	height: 38px;
+	top: 50px;
+	left: 200px;
+	background: url(linkedin.png);
+	background-size: cover;
+	transition: 0.3s;
+}
+.linkedin:hover {
+	transform: scale(1.1);
+}
+
+.name {
+	position: relative;
+
+	height: 28px;
+	padding: 5px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 28px;
+
+	color: #ffffff;
+}
+
+.subsystem {
+	position: relative;
+
+	height: 15px;
+
+	padding: 5px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 15px;
+
+	color: #ffffff;
 }
