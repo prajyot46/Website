@@ -1,42 +1,65 @@
 var alumni = new Vue({
 	el: "#alumniContainer",
 	data: {
+		setevent: function (id) {
+			this.$nextTick(function () {
+				console.log(id);
+				var box = document.getElementById(id);
+				box.addEventListener("mouseenter", () => {
+					box.style.opacity = 0.7;
+				});
+				box.addEventListener("mouseleave", () => {
+					box.style.opacity = 0;
+				});
+			});
+		},
+		test: function (id) {
+			var box = document.getElementById(id);
+
+			if (box.style.opacity > 0.5) box.style.opacity = 0;
+			else box.style.opacity = 0.7;
+			console.log(box);
+		},
+
 		alumniTeam: [
 			{
 				name: "Jonathan Verghese",
 				yearOfPassing: "6/2/2014",
 				Branch: "Mechanical Engineering",
-				roleInTeam: "Suspension team lead and Co-sponsorship head",
+				roleInTeam: "Suspension lead, Co-sponsorship head",
 				linkedIn: "https://www.linkedin.com/in/jonathan-verghese-731204a0",
 				subsytem: "",
 				currentJob: "Battery Integration Engineer",
 				currentCompany: "Rivian",
 				currentLocation: "Irvine, California",
 				emailId: "jontyverghese@gmail.com",
+				image: "jonathanverghese.webp",
 			},
 			{
 				name: "Ajit Radder",
 				yearOfPassing: "7/15/2014",
 				Branch: "Mechanical Engineering",
 				roleInTeam: "Mechanical lead ",
-				linkedIn: "Ajit Radder",
+				linkedIn: "NA",
 				subsytem: "Engine, Brakes, chassis",
 				currentJob: "NA",
 				currentCompany: "Meritor",
 				currentLocation: "Bangalore",
 				emailId: "Ajit306@gmail.com",
+				image: "placeholder.webp",
 			},
 			{
 				name: "Sthitapradyna Rasalkar",
 				yearOfPassing: "5/20/2015",
 				Branch: "Electrical and Electronics Engineering",
 				roleInTeam: "CFO, Electrical Design",
-				linkedIn: "/in/Sthita",
+				linkedIn: "https://www.linkedin.com/in/sthita/",
 				subsytem: "Electrical",
 				currentJob: "Manufacturing Engineer",
 				currentCompany: "Lightforce Orthodontics",
 				currentLocation: "Boston",
 				emailId: "Sthita1212@gmail.com",
+				image: "sthitapradyna.webp",
 			},
 			{
 				name: "Avinash Joshi",
@@ -49,6 +72,7 @@ var alumni = new Vue({
 				currentCompany: "XIMB",
 				currentLocation: "Bhubaneswar, Odisha",
 				emailId: "avijoshi621@gmail.com",
+				image: "avinashjoshi.webp",
 			},
 			{
 				name: "Nishchay",
@@ -61,6 +85,7 @@ var alumni = new Vue({
 				currentCompany: "IIT Bombay",
 				currentLocation: "Mumbai",
 				emailId: "nishchay1110@gmail.com",
+				image: "nischay.webp",
 			},
 			{
 				name: "Akshay Kumar P",
@@ -71,8 +96,9 @@ var alumni = new Vue({
 				subsytem: "Vehicle dynamics",
 				currentJob: "NA",
 				currentCompany: "NA",
-				currentLocation: "",
+				currentLocation: "NA",
 				emailId: "akshayp110@gmail.com",
+				image: "placeholder.webp",
 			},
 			{
 				name: "Akshay R",
@@ -85,30 +111,33 @@ var alumni = new Vue({
 				currentCompany: "Mbrdi",
 				currentLocation: "Bengaluru",
 				emailId: "akshayr1995.india@gmail.com",
+				image: "akshayr.webp",
 			},
 			{
 				name: "Sumukha",
 				yearOfPassing: "7/10/2017",
 				Branch: "Electrical and Electronics Engineering",
 				roleInTeam: "Electronics Systems Officer",
-				linkedIn: "Sumukha Udupa",
+				linkedIn: "NA",
 				subsytem: "BMS and Control",
 				currentJob: "NA",
 				currentCompany: "NA",
 				currentLocation: "NA",
 				emailId: "sumukhaudupa@ymail.com",
+				image: "placeholder.webp",
 			},
 			{
 				name: "Ganne Sai Gokul",
 				yearOfPassing: "5/1/2018",
 				Branch: "Computer Science and Engineering",
 				roleInTeam: "Vice captain",
-				linkedIn: "ganne-sai-gokul",
+				linkedIn: "https://www.linkedin.com/in/ganne-sai-gokul",
 				subsytem: "Management & Telemetry",
 				currentJob: "Software Engineer",
 				currentCompany: "Recko Inc",
 				currentLocation: "Bangalore",
 				emailId: "gokulshankar.sai@gmail.com",
+				image: "ganne.webp",
 			},
 			{
 				name: "Sai Charan",
@@ -121,6 +150,7 @@ var alumni = new Vue({
 				currentCompany: "Toyota kirloskar motors",
 				currentLocation: "Bangalore",
 				emailId: "saicharan576@gmail.com",
+				image: "saicharan.webp",
 			},
 			{
 				name: "Niral",
@@ -133,6 +163,7 @@ var alumni = new Vue({
 				currentCompany: "NITIE",
 				currentLocation: "Mumbai",
 				emailId: "niral3007@gmail.com",
+				image: "niral.webp",
 			},
 			{
 				name: "Darshan Gadginmath",
@@ -140,13 +171,13 @@ var alumni = new Vue({
 				Branch: "Electrical and Electronics Engineering",
 				roleInTeam:
 					"ESO, worked on the BMS, motor and motor controller, wiring, etc. ",
-				linkedIn:
-					"https://in.linkedin.com/in/darshangadginmath-8b37a5111?challengeId=AQGFgHot-XcL7QAAAXNDtPZVuQ0gPTItywoZARUa8aGhj3fNx-pKm6kKu4whzDUbQA1lyqfOwNi8F1r-UWIEHgk0cG6mqoqzeQ&submissionId=00541ef5-df0b-2116-a609-ab644df3a77d",
+				linkedIn: "https://www.linkedin.com/in/darshangadginmath-8b37a5111/",
 				subsytem: "Electrical subsystem",
 				currentJob: "Research assistant at IISc",
 				currentCompany: "Indian Institute of Science",
 				currentLocation: "Bengaluru",
 				emailId: "darshan.gm9@gmail.com",
+				image: "darshang.webp",
 			},
 			{
 				name: "E R Sumanth",
@@ -159,6 +190,7 @@ var alumni = new Vue({
 				currentCompany: "Toyota kirloskar motor Pvt Ltd ",
 				currentLocation: "Banglore",
 				emailId: "er.sumanth@gmail.com",
+				image: "ersumanth.webp",
 			},
 			{
 				name: "Prajwal K",
@@ -171,6 +203,7 @@ var alumni = new Vue({
 				currentCompany: "Prakhyath Machine & Machine Tools Pvt.Ltd.",
 				currentLocation: "BANGALORE",
 				emailId: "kprajwal0@gmail.com",
+				image: "prajwalmurthy.webp",
 			},
 			{
 				name: "Chethan K P",
@@ -183,33 +216,36 @@ var alumni = new Vue({
 				currentCompany: "Citrix",
 				currentLocation: "Bengaluru",
 				emailId: "chethan749@gmail.com",
+				image: "chethankp.webp",
 			},
 			{
 				name: "Rahul Ramaprasad",
 				yearOfPassing: "6/1/2019",
 				Branch: "Electronics and Communication Engineering",
 				roleInTeam: "Infotainment system",
-				linkedIn: "Rahul Ramaprasad ",
+				linkedIn: "https://www.linkedin.com/in/rahul-ramaprasad7/",
 				subsytem: "Electrical ",
 				currentJob: "Masters student ",
 				currentCompany: "University of Colorado Boulder",
 				currentLocation: "Boulder",
 				emailId: "Rahul.ramaprasad@gmail.com",
+				image: "rahulrp.webp",
 			},
 			{
 				name: "Rahul Patil",
 				yearOfPassing: "6/1/2019",
 				Branch: "Computer Science and Engineering",
 				roleInTeam: "Infotainment subsystem lead",
-				linkedIn: "rahul-m-patil",
+				linkedIn: "https://www.linkedin.com/in/rahul-m-patil",
 				subsytem: "Infotainment",
 				currentJob: "Software Engineer",
 				currentCompany: "Cisco systems",
 				currentLocation: "Bengaluru",
 				emailId: "rahulpatil61197@gmail.com",
+				image: "rahulpatil.webp",
 			},
 			{
-				name: "SWAPNIL SAVARN",
+				name: "Swapnil Savaran",
 				yearOfPassing: "6/1/2019",
 				Branch: "Mechanical Engineering",
 				roleInTeam: "Project Manager",
@@ -219,6 +255,7 @@ var alumni = new Vue({
 				currentCompany: "Box8",
 				currentLocation: "Mumbai",
 				emailId: "swapnilsavarn@gmail.com",
+				image: "swapnilsavaran.webp",
 			},
 			{
 				name: "Anshuman B V",
@@ -231,6 +268,7 @@ var alumni = new Vue({
 				currentCompany: "Agni Motors",
 				currentLocation: "Bengaluru",
 				emailId: "anshuman.karaba@gmail.com",
+				image: "anshuman.webp",
 			},
 			{
 				name: "Prakyath Poojary",
@@ -243,6 +281,7 @@ var alumni = new Vue({
 				currentCompany: "NA",
 				currentLocation: "",
 				emailId: "prakyathpoojary07@gmail.com",
+				image: "prakyathp.webp",
 			},
 			{
 				name: "Srujan S R",
@@ -255,6 +294,7 @@ var alumni = new Vue({
 				currentCompany: "NA",
 				currentLocation: "NA",
 				emailId: "srujan.rangayyan@gmail.com",
+				image: "placeholder.webp",
 			},
 			{
 				name: "Nikhil B Bhat",
@@ -267,6 +307,7 @@ var alumni = new Vue({
 				currentCompany: "Inteva products",
 				currentLocation: "Bangalore",
 				emailId: "nikhilbbhat1398@gmail.com",
+				image: "nikhilbhat.webp",
 			},
 			{
 				name: "Vishal F Aralikatti",
@@ -279,18 +320,20 @@ var alumni = new Vue({
 				currentCompany: "Synopsys",
 				currentLocation: "Bangalore",
 				emailId: "vishalraj736@gmail.com",
+				image: "placeholder.webp",
 			},
 			{
 				name: "Praneeth Lanka",
 				yearOfPassing: "7/1/2020",
 				Branch: "Mechanical Engineering",
 				roleInTeam: "Project Manager - Technical",
-				linkedIn: "Praneeth Lanka",
+				linkedIn: "https://www.linkedin.com/in/praneeth-l-0b1211b0/",
 				subsytem: "Suspension",
 				currentJob: "NA",
 				currentCompany: "NA",
 				currentLocation: "NA",
 				emailId: "rampraneethlanka@gmail.com",
+				image: "praneethlanka.webp",
 			},
 			{
 				name: "Venkatesh S",
@@ -303,18 +346,20 @@ var alumni = new Vue({
 				currentCompany: "Lam research",
 				currentLocation: "Bengaluru",
 				emailId: "venkateshsatish96@gmail.com",
+				image: "venkatesh.webp",
 			},
 			{
 				name: "Mushtaq Ahmed",
 				yearOfPassing: "7/31/2020",
 				Branch: "Electronics and Communication Engineering",
 				roleInTeam: "Project Manager ( Management )",
-				linkedIn: "ahmed.mushtaq902@gmail.com",
+				linkedIn: "NA",
 				subsytem: "Sponsorship ",
 				currentJob: "Software Developer",
 				currentCompany: "ANSYS Inc",
 				currentLocation: "Bangalore",
 				emailId: "ahmed.mushtaq902@gmail.com",
+				image: "mushtaq_sheikh.webp",
 			},
 			{
 				name: "Mahimashree",
@@ -326,7 +371,8 @@ var alumni = new Vue({
 				currentJob: "Mechatronics engineer ",
 				currentCompany: "Jiva Sciences ",
 				currentLocation: "Bengaluru",
-				emailId: "Mahimashree.teamchimera@gmail.com ",
+				emailId: "Mahimashree.teamchimera@gmail.com",
+				image: "mahimashree.webp",
 			},
 			{
 				name: "Akshaya Kumar Joish",
@@ -339,6 +385,7 @@ var alumni = new Vue({
 				currentCompany: "Cisco",
 				currentLocation: "Bangalore",
 				emailId: "akshayjoish28@gmail.com",
+				image: "akj.webp",
 			},
 			{
 				name: "Chiranjeevi N",
@@ -351,6 +398,7 @@ var alumni = new Vue({
 				currentCompany: "NA",
 				currentLocation: "NA",
 				emailId: "naraharichiranjeevi@gmail.com",
+				image: "chiranjeevi.webp",
 			},
 			{
 				name: "Praveer Prakash",
@@ -363,6 +411,7 @@ var alumni = new Vue({
 				currentCompany: "NA",
 				currentLocation: "",
 				emailId: "praveer.teamchimera@gmail.com",
+				image: "praveer.webp",
 			},
 			{
 				name: "Sree Siddhant",
@@ -375,6 +424,7 @@ var alumni = new Vue({
 				currentCompany: "Collins Aerospace",
 				currentLocation: "Bengaluru",
 				emailId: "sreesiddhant98@gmail.com",
+				image: "sreesiddhant.webp",
 			},
 		],
 	},
