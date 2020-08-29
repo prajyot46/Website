@@ -39,7 +39,7 @@
 	}
 }
 #Description p {
-	margin: 0px 300px 0 300px;
+	margin: 0px 100px 0 100px;
 	text-align: justify;
 	text-justify: inter-word;
 }
@@ -149,7 +149,7 @@ section {
 	height: 20px;
 	margin: 2px;
 	left: 0;
-	display: inline-block;
+
 	background: url(https://simpleicons.org/icons/linkedin.svg);
 	filter: invert();
 	background-size: cover;

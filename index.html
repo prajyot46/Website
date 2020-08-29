@@ -283,88 +283,16 @@
           <h1 class="timeline-header__title">TIMELINE </h1>
           <h3 class="timeline-header__subtitle">OUR HISTORY</h3>
         </div>
-        <div class="timeline">
-          <div class="timeline-item" data-text="OUR HISTORY">
-            <div class="timeline__content"><img class="timeline__img" src="assets/img/img/1.jpg" />
-              <h2 class="timeline__content-title">2006</h2>
-              <h1 style="font-size: 21px" class="timeline__content-desc">Our Humble Beginnings </h1>
-              <p class="timeline__content-desc">In 2006, a group of students from the Mechanical Department of RVCE came
-                up with the idea of fuel efficient yet robust cars giving rise to TEAM CHIMERA.</p>
+        <div class="timeline" id="timelineContainer">
+          <div  v-for="(object, index) in timelineobject" class="timeline-item" data-text="OUR HISTORY">
+            <div class="timeline__content"><img class="timeline__img" v-bind:src="object.image" />
+              <h2 class="timeline__content-title">{{object.title}}</h2>
+              <h1 style="font-size: 21px" class="timeline__content-desc">{{object.description}}</h1>
+              <p class="timeline__content-desc">{{object.content}}</p>
             </div>
           </div>
 
-          <div class="timeline-item" data-text="OUR HISTORY">
-            <div class="timeline__content"><img class="timeline__img" src="assets/img/img/2.jpg" />
-              <h2 class="timeline__content-title">2009</h2>
-              <h1 style="font-size: 21px" class="timeline__content-desc">Hybrid Auto Rickshaw Battle </h1>
-              <p class="timeline__content-desc">Our business plan was adjudged the best and the project overall finished
-                second.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item" data-text="OUR HISTORY">
-            <div class="timeline__content"><img class="timeline__img" src="assets/img/img/3.jpg" />
-              <h2 class="timeline__content-title">2011</h2>
-              <h1 style="font-size: 21px" class="timeline__content-desc">Challenge Bibendum </h1>
-              <p class="timeline__content-desc">The only Indian team to successfully participate in Challenge Bibendum
-                organized by Michelin in Berlin.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item" data-text="OUR HISTORY">
-            <div class="timeline__content"><img class="timeline__img" src="assets/img/img/4.jpg">
-              <h2 class="timeline__content-title"> 2014</h2>
-              <h1 style="font-size: 21px" class="timeline__content-desc">FSAE Hybrid - USA </h1>
-              <p class="timeline__content-desc">First Asian team to participate. Stood 9th in the competition bringing
-                back the Fan Favourite Award.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item" data-text="OUR HISTORY">
-            <div class="timeline__content"><img class="timeline__img" src="assets/img/img/5.jpg">
-              
-              <h2 class="timeline__content-title"> 2015</h2>
-              <h1 style="font-size: 21px" class="timeline__content-desc">FSAE Electric - Italy </h1>
-              <p class="timeline__content-desc">First venture into pure Electric cars after spending years in making
-                Hybrid cars which made use of gas along with electricity for propulsion.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item" data-text="OUR HISTORY">
-            <div class="timeline__content"><img class="timeline__img" src="assets/img/img/6.jpg">
-              <h2 class="timeline__content-title"> 2016</h2>
-              <h1 style="font-size: 21px" class="timeline__content-desc">FSAE Electric - Japan </h1>
-              <p class="timeline__content-desc">With improved car E-VOLVE v2 we bagged ROOKIE AWARD in the Electric
-                Vehicle category</p>
-            </div>
-          </div>
-
-          <div class="timeline-item" data-text="OUR HISTORY">
-            <div class="timeline__content"><img class="timeline__img" src="assets/img/img/7.jpeg">
-              <h2 class="timeline__content-title"> 2017</h2>
-              <h1 style="font-size: 21px" class="timeline__content-desc">FSAE Electric - Japan </h1>
-              <p class="timeline__content-desc">We were placed 6th in business presentation in the electric category
-                with our new car Chronos</p>
-            </div>
-          </div>
-
-          <div class="timeline-item" data-text="OUR HISTORY">
-            <div class="timeline__content"><img class="timeline__img" src="assets/img/img/8.jpg">
-              <h2 class="timeline__content-title"> 2018</h2>
-              <h1 style="font-size: 21px" class="timeline__content-desc">FSEV Concept Challenge - India</h1>
-              <p class="timeline__content-desc">We were placed 6th in business presentation in the electric category
-                with our new car Chronos</p>
-            </div>
-          </div>
-
-          <div class="timeline-item" data-text="OUR HISTORY">
-            <div class="timeline__content"><img class="timeline__img" src="assets/img/img/9.jpeg">
-              <h2 class="timeline__content-title"> 2019</h2>
-              <h1 style="font-size: 21px" class="timeline__content-desc">Formula Bharat </h1>
-              <p class="timeline__content-desc">Participated in Formula Bharat 2019 held in Coimbatore,India and bagged
-                1st place in in Business Plan Presentation.</p>
-            </div>
-          </div>
+     
 
 
 
@@ -400,7 +328,7 @@
 
             selectors.item.each(function (i) {
 
-              min = $(this).offset().top - 200;
+              min = $(this).offset().top - $(this).height();
               max = $(this).height() + $(this).offset().top;
               var that = $(this);
               if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
@@ -801,11 +729,11 @@
             <h4 class="text-center mx-auto font-weight-bold mb-4 pb-2">LEADING TEAM</h4>
             <div id="leadingTeamContainer">
               <div class="row">
-                <div v-for="(member, index) in leadingTeam" class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div v-for="(member, index) in leadingTeam" class="col-lg-3 col-md-4 col-sm-6">
 
                   <div class="p-4">
                     <div class="avatar w-100 white d-flex justify-content-center align-items-center">
-                      <img loading="lazy" v-bind:src="member.image" width="200px" class="img-fluid rounded-circle z-depth-1" />
+                      <img loading="lazy" v-bind:src="member.image"  class="square-img img-fluid rounded-circle z-depth-1" />
                     </div>
                     <div class="text-center mt-3">
                       <h6 class="font-weight-bold pt-2">{{ member.name }}</h6>
@@ -1018,7 +946,7 @@
         </span>
       </div>
       <div class="credits">
-        <p class="text-faded" style="margin-top: 1%">Website developed by <font>Team Chimera</font>
+        <p class="text-faded" style="margin-top: 1%">Credits: BootstrapMade.com.
         </p>
       </div>
     </div>
@@ -1072,7 +1000,7 @@
   <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-
+  <script src="assets/js/timelinedata.js"></script>
   <script src="assets/js/leadingteam.js"></script>
   <script src="assets/js/sponsors.js"></script>
   <script type="text/javascript" lang="javascript"

@@ -66,23 +66,25 @@
 					<div class="photo-container">
 						<img class="photo" v-bind:src="`./assets/img/alumni/`+member.image" />
 						<div class="additional-details" :id="`ad_row`+index">
-							<a>Email: {{member.emailId}} </span>
-							<a v-if="member.currentJob != 'NA' && member.currentLocation != 'NA' &&  member.currentCompany != 'NA'">Currently: <br> {{member.currentJob}}, <br>{{member.currentCompany}},  <br>{{member.currentLocation}} </a>
+							<a v-if="member.subsystem != 'NA'"><b>Worked on:</b> {{member.subsystem}}<br> </a> 
+							<a><b>Email:</b> {{member.emailId}} </span>
+							<a v-if="member.currentJob != 'NA' && member.currentLocation != 'NA' &&  member.currentCompany != 'NA'"> <b>Currently:</b> <br> {{member.currentJob}}, <br>{{member.currentCompany}},  <br>{{member.currentLocation}} </a>
 
 						</div>
 					</div>
 					<div class="det-rect">
 
 
-						<div style="flex-basis: 80%">
+						<div style="flex-basis: 90%">
 							<div class="name">{{member.name}}</div>
 							<div class="subsystem">{{member.roleInTeam}}</div>
 						</div>
 						<!-- <div class="email"></div> -->
 						<div class="email-linkedin">
 
-							<div class="info" v-on:click="test(`ad_row`+index)"></div>
+						
 							<div v-if="member.linkedIn != 'NA'" class="linkedin" v-on:click="window.open(member.linkedIn)"></div>
+							<div class="info" v-on:click="test(`ad_row`+index)"></div>
 						</div>
 
 						<!-- <a v-bind:href=" mailto:${member.emailId} "></a> -->

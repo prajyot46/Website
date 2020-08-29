@@ -645,8 +645,6 @@ section {
 	box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
 
-
-
 /*--------------------------------------------------------------
 # sponsers
 --------------------------------------------------------------*/
@@ -1474,4 +1472,11 @@ section {
 	#footer .footer-top .footer-info {
 		margin: -20px 0 30px 0;
 	}
+}
+
+.square-img {
+	object-fit: cover;
+	overflow: hidden;
+	height: 15vh;
+	width: 15vh;
 }
