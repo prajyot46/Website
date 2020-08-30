@@ -137,6 +137,7 @@ section {
 	opacity: 0;
 	transition: 0.5s ease;
 	background-color: black;
+	overflow-wrap: break-word;
 }
 
 .photo {
