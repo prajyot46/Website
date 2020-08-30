@@ -66,7 +66,7 @@ var timelineData = new Vue({
 					"Participated in Formula Bharat 2019 held in Coimbatore,India and bagged 1st place in in Business Plan Presentation.",
 			},
 			{
-				image: "assets/img/img/2020.jpg",
+				image: "",
 				title: "2020",
 				desc: "Formula Bharat",
 				content: "",
