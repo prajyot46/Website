@@ -11,7 +11,7 @@ var list = new Vue({
 		goldSponsers: [
 			{
 				link: "http://www.zuken.com/en/",
-				image: "assets/img/sponsers/zuken.webp",
+				image: "assets/img/sponsers/zuken.png",
 				name: "Zuken",
 			},
 			{

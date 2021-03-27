@@ -21,7 +21,11 @@ a:hover {
 	color: rgb(25, 243, 6);
 	text-decoration: none;
 }
-
+.doodle
+{
+	position:sticky;
+	z-index: -9999999;
+}
 h1,
 h2,
 h3,
@@ -527,7 +531,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-	padding: 60px 0;
+	padding: 40px 0;
 	overflow: hidden;
 }
 
@@ -650,7 +654,7 @@ section {
 --------------------------------------------------------------*/
 .sponsers {
 	background: white;
-	padding: 15px 0;
+	padding-top:0px ;
 	text-align: center;
 }
 
@@ -982,6 +986,9 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
+#team.team{
+	padding: 0;
+}
 .team .member {
 	text-align: center;
 	margin-bottom: 20px;
@@ -1031,6 +1038,19 @@ section {
 .team .member .social i {
 	font-size: 18px;
 	margin: 0 2px;
+}
+@media (max-width: 992px){
+	.teamob{
+
+	  display: flex!important;
+	  flex-wrap: nowrap!important;
+      white-space: nowrap;
+	  
+      height: 230px;
+      overflow-x: scroll;
+	  overflow-y:hidden;
+      width: auto;
+	}
 }
 
 /*--------------------------------------------------------------
