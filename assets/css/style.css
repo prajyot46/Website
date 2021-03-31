@@ -173,6 +173,10 @@ h6 {
 	border-left: 0;
 }
 
+#timeline
+{
+	padding: 0px 0px!important;
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -652,9 +656,17 @@ section {
 /*--------------------------------------------------------------
 # sponsers
 --------------------------------------------------------------*/
+.sponsorWrap
+{
+	background: rgb(243, 243, 243);
+	margin: 0px;
+	padding-bottom: 20px;
+}
 .sponsers {
 	background: white;
-	padding-top:0px ;
+	margin: 20px;
+	padding-top:20px ;
+	box-shadow: 0 0 10px #d3d2d2;;
 	text-align: center;
 }
 
@@ -987,7 +999,9 @@ section {
 # Team
 --------------------------------------------------------------*/
 #team.team{
-	padding: 0;
+	padding-top: 0;
+	background: rgb(243, 243, 243);
+	margin-bottom: -20px;
 }
 .team .member {
 	text-align: center;
