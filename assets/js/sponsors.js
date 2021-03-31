@@ -76,7 +76,7 @@ var list = new Vue({
 			{
 				link: "https://www.bender.org/",
 				image: "Bender",
-				name: "assets/img/sponsers/bender.webp",
+				name: "assets/img/sponsers/bender - Copy.jpg",
 			},
 			{
 				link: "https://www.sensata.com/",
