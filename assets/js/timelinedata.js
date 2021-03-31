@@ -38,28 +38,28 @@ var timelineData = new Vue({
 					"First venture into pure Electric cars after spending years in making Hybrid cars which made use of gas along with electricity for propulsion.",
 			},
 			{
-				image: "assets/img/img/6.jpg",
+				image: "assets/img/img/66.png",
 				title: "2016",
 				desc: "FSAE Electric - Japan",
 				content:
 					"With improved car E-VOLVE v2 we bagged ROOKIE AWARD in the Electric Vehicle category",
 			},
 			{
-				image: "assets/img/img/7.jpeg",
+				image: "assets/img/img/7.png",
 				title: "2017",
 				desc: "FSAE Electric - Japan",
 				content:
 					"We were placed 6th in business presentation in the electric category with our new car Chronos",
 			},
 			{
-				image: "assets/img/img/8.jpg",
+				image: "assets/img/img/8.png",
 				title: "2018",
 				desc: "FSEV Concept Challenge - India",
 				content:
 					"We were placed 6th in business presentation in the electric category with our new car Chronos",
 			},
 			{
-				image: "assets/img/img/2019.jpg",
+				image: "assets/img/img/10.png",
 				title: "2019",
 				desc: "Formula Bharat",
 				content:
