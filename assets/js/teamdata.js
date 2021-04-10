@@ -1,7 +1,7 @@
 var teamJs = new Vue({
 	el: "#teamdata",
 	data: {
-		team2021: [
+		/*team2021: [
 			{
 				image: "assets/img/team/Vaibhav Hebbal.webp",
 				name: "Vaibhav Hebbal",
@@ -102,28 +102,55 @@ var teamJs = new Vue({
 				name: "Bhagyesh Choudhari",
 				subsystem: "Mechanical Engineer",
 			},
-		],
+		],*/
 		team2022: [
 			{
+				image: "assets/img/team/amith.webp",
+				name: "Amith S Kumar",
+				subsystem: "Team Captain",
+			},
+			{
+				image: "assets/img/team/Preetham Reddy.webp",
+				name: "Preetham Reddy",
+				subsystem: "Vice Captain",
+			},
+			{
+				image: "assets/img/team/revathi.webp",
+				name: "Revathi M S",
+				subsystem: "Project Manager",
+			},
+			{
+				image: "assets/img/team/Udayraj Nayak.webp",
+				name: "Udayraj Nayak",
+				subsystem: "Project Manager",
+			},
+			{
 				image: "assets/img/team/prajyot.webp",
-				name: "Prajyot Biradar",
-				subsystem: "Powertrain",
+				name: "Prajyot K Biradar",
+				subsystem: "Electrical Head and ESO",
+			},
+			{
+				image: "assets/img/team/Rohith V Kamath.webp",
+				name: "Rohith V Kamath",
+				subsystem: "Electrical Head and ESO",
+			},
+			{
+				image: "assets/img/team/Eshwar sandireddy.webp",
+				name: "Eshwar Reddy",
+				subsystem: "Mechanical Head",
+			},
+			{
+				image: "assets/img/team/jigisha.webp",
+				name: "Jigisha Kamal",
+				subsystem: "MAnagement Head",
 			},
 			{
 				image: "assets/img/team/Anusha Gangavati.webp",
 				name: "Anusha Gangavati",
 				subsystem: "Powertrain",
 			},
-			{
-				image: "assets/img/team/revathi.webp",
-				name: "Revathi M S",
-				subsystem: "Powertrain",
-			},
-			{
-				image: "assets/img/team/amith.webp",
-				name: "Amith S Kumar",
-				subsystem: "Powertrain",
-			},
+			
+		
 			{
 				image: "assets/img/team/manoj.webp",
 				name: "Manoj. M",
@@ -134,21 +161,13 @@ var teamJs = new Vue({
 				name: "Kaushik Sengupta",
 				subsystem: "Safety Circuits",
 			},
-			{
-				image: "assets/img/team/Rohith V Kamath.webp",
-				name: "Rohith Vivek Kamath",
-				subsystem: "Safety Circuits",
-			},
+			
 			{
 				image: "assets/img/team/Junaid Khan.webp",
 				name: "Junaid Khan",
 				subsystem: "Safety Circuits",
 			},
-			{
-				image: "assets/img/team/Udayraj Nayak.webp",
-				name: "Udayraj V Nayak",
-				subsystem: "Safety Circuits",
-			},
+		
 			{
 				image: "assets/img/team/janardhan.webp",
 				name: "Janardhana Gowda C",
@@ -169,11 +188,7 @@ var teamJs = new Vue({
 				name: "Vibhor Bhardwaj",
 				subsystem: "Management and Sponsorship",
 			},
-			{
-				image: "assets/img/team/jigisha.webp",
-				name: "Jigisha Kamal",
-				subsystem: "Management and Sponsorship",
-			},
+	
 			{
 				image: "assets/img/team/placeholder.webp",
 				name: "Prajwal C P",
@@ -189,11 +204,7 @@ var teamJs = new Vue({
 				name: "Monika C R",
 				subsystem: "Power train",
 			},
-			{
-				image: "assets/img/team/Preetham Reddy.webp",
-				name: "R Preetham Reddy",
-				subsystem: "NULL",
-			},
+		
 			{
 				image: "assets/img/team/Kiran Thunuguntla.webp",
 				name: "Thunuguntla VNS Sri Kiran",
@@ -204,11 +215,7 @@ var teamJs = new Vue({
 				name: "Rajath Rao TN",
 				subsystem: "NULL",
 			},
-			{
-				image: "assets/img/team/Eshwar sandireddy.webp",
-				name: "Sandireddy Reddy Eshwar",
-				subsystem: "NULL",
-			},
+		
 			{
 				image: "assets/img/team/Hari J.webp",
 				name: "Hariharasudhan J",
