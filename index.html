@@ -692,7 +692,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h1 class="timeline-header__title" style="text-shadow: 2px 2px 5px black ;font-size: 40px!important;">TEAM </h1>
+          <h1 class="timeline-header__title" style="text-shadow: 2px 2px 5px black ;font-size: 50px!important;">TEAM </h1>
         </div>
         <div>
           <h4 class="text-center mx-auto font-weight-bold mb-4 pb-2">FACULTY ADVISOR</h4>
@@ -770,7 +770,7 @@
         <h2>SPONSORS</h2>
       </div>
       <div id="sponserContainer" class="container" data-aos="zoom-in">
-        <h4 class="section-heading wow bounceIn" style="font-weight: bold;">PLATINUM SPONSERS</h4>
+        <span class="section-heading wow bounceIn plat" style="font-weight: bold;">PLATINUM SPONSERS</span>
         <div class="row d-flex justify-content-center align-items-center">
 
           <div v-for="sponser in platinumSponsers" class="col-lg-3 col-md-7 col-10">
@@ -779,21 +779,21 @@
           </div>
 
         </div>
-
-        <h4 class="section-heading wow bounceIn" style="font-weight: bold;padding: 15px 0;">GOLD SPONSERS</h4>
+       
+        <span class="section-heading wow bounceIn gold" style="font-weight: bold;padding: 15px 0;">GOLD SPONSERS</span>
         <div class="row d-flex justify-content-center align-items-center ">
 
-          <div v-for="sponser in goldSponsers" class="col-lg-3 col-md-7 col-10">
+          <div v-for="sponser in goldSponsers" class="col-lg-3 col-md-5 col-10">
             <a target="_blank" v-bind:href="sponser.link">
               <img loading="lazy" v-bind:src="sponser.image" class="img-responsive" alt="img-responsive"></a>
           </div>
         </div>
-
+      
        
-        <h4 class="section-heading wow bounceIn" style="font-weight: bold; padding: 15px 0;">BRONZE SPONSERS</h4>
+        <span class="section-heading wow bounceIn bronz" style="font-weight: bold; padding: 15px 0;">BRONZE SPONSERS</span>
         <div class="row d-flex justify-content-center align-items-center ">
 
-          <div v-for="sponser in bronzeSponsers" class="col-lg-3 col-md-7 col-10">
+          <div v-for="sponser in bronzeSponsers" class="col-lg-3 col-md-5 col-10">
             <a target="_blank" v-bind:href="sponser.link">
               <img loading="lazy" v-bind:src="sponser.image" class="img-responsive" alt="img-responsive"></a>
           </div>
@@ -801,10 +801,10 @@
         </div>
          
 
-        <h4 class="section-heading wow bounceIn" style="font-weight: bold;padding: 15px 0;">TECHNICAL SPONSERS</h4>
+        <h4 class="section-heading wow bounceIn" style="font-weight: bold;padding: 15px 0;font-family: 'Times New Roman',serif; font-size: 25px;">TECHNICAL SPONSERS</h4>
         <div class="row d-flex justify-content-center align-items-center ">
 
-          <div v-for="sponser in technicalSponsers" class="col-lg-3 col-md-7 col-10">
+          <div v-for="sponser in technicalSponsers" class="col-lg-3 col-md-5 col-10">
             <a target="_blank" v-bind:href="sponser.link">
               <img loading="lazy" v-bind:src="sponser.image" class="img-responsive" alt="img-responsive"></a>
           </div>

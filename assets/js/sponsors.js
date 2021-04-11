@@ -4,7 +4,7 @@ var list = new Vue({
 		platinumSponsers: [
 			{
 				link: "https://www.amphenol.com/",
-				image: "assets/img/sponsers/amphenol.jpg",
+				image: "assets/img/sponsers/amphenol.png",
 				name: "Amphenol FCC",
 			},
 		],
@@ -95,7 +95,7 @@ var list = new Vue({
 			},
 			{
 				link: "http://www.gigavac.com/",
-				image: "assets/img/sponsers/gigavac.webp",
+				image: "assets/img/sponsers/gigavac.png",
 				name: "Gigavac",
 			},
 			{
@@ -110,17 +110,17 @@ var list = new Vue({
 			},
 			{
 				link: "https://www.altair.com/",
-				image: "assets/img/sponsers/altair.webp",
+				image: "assets/img/sponsers/Altair.png",
 				name: "Altair",
 			},
 			{
-				link: "https://www.igues.com/",
-				image: "assets/img/sponsers/igus.webp",
+				link: "https://www.igus.com/",
+				image: "assets/img/sponsers/igu.png",
 				name: "Igus",
 			},
 			{
 				link: "https://www.ipg-automotive.com/",
-				image: "assets/img/sponsers/ipg.png",
+				image: "assets/img/sponsers/IPG (2).png",
 				name: "IPG-Automotive",
 			},
 		],

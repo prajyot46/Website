@@ -1,7 +1,7 @@
 var teamJs = new Vue({
 	el: "#teamdata",
 	data: {
-		/*team2021: [
+		team2021: [
 			{
 				image: "assets/img/team/Vaibhav Hebbal.webp",
 				name: "Vaibhav Hebbal",
@@ -102,7 +102,7 @@ var teamJs = new Vue({
 				name: "Bhagyesh Choudhari",
 				subsystem: "Mechanical Engineer",
 			},
-		],*/
+		],
 		team2022: [
 			{
 				image: "assets/img/team/amith.webp",

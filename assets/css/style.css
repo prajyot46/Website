@@ -670,6 +670,71 @@ section {
 	text-align: center;
 }
 
+.gold
+	{
+		
+		transform: translate(-50%,-50%);
+		font-family: 'Times New Roman',serif;
+		font-size: 25px;
+		font-weight: bold;
+		background-image: linear-gradient(
+		 to right,
+		 #f8eb2f 0,
+				#cb9b51 22%, 
+		 #f6e27a 50%,
+		
+		 #f6e27a 55%,
+		 #cb9b51 78%,
+		 #f8eb2f 100%
+		 );
+		color:transparent;
+		-webkit-background-clip:text;
+	 
+	 }
+
+.plat{
+
+	    transform: translate(-50%,-50%);
+		font-family: 'Times New Roman',serif;
+		font-size: 25px;
+		font-weight: bold;
+		background-image: linear-gradient(
+		 to right,
+		 #1D1D1B 0,
+				#AEADAB 22%, 
+		 #575654 50%,
+		
+		 #575654 55%,
+		 #1D1D1B 78%,
+		 #AEADAB 100%
+		 );
+		color:transparent;
+		-webkit-background-clip:text;
+
+}
+
+.bronz{
+
+	transform: translate(-50%,-50%);
+		font-family: 'Times New Roman',serif;
+		font-size: 25px;
+		font-weight: bold;
+		background-image: linear-gradient(
+		 to right,
+		 #4e2208 0,
+				#966708 22%, 
+		 #4d3507 50%,
+		
+		 #744f05 55%,
+		 #975c04 78%,
+		 #4e2208 100%
+		 );
+		color:transparent;
+		-webkit-background-clip:text;
+
+}
+
+
 .sponsers img {
 	width: 50%;
 	/* -webkit-filter: grayscale(100); */
@@ -1065,6 +1130,9 @@ section {
       overflow-x: scroll;
 	  overflow-y:hidden;
       width: auto;
+	}
+	.p-4{
+		padding-right:55px!important ;
 	}
 }
 
