@@ -66,10 +66,16 @@ var timelineData = new Vue({
 					"Participated in Formula Bharat 2019 held in Coimbatore,India and bagged 1st place in in Business Plan Presentation.",
 			},
 			{
-				image: "",
+				image: "assets/img/img/13.png",
 				title: "2020",
 				desc: "Formula Bharat",
-				content: "",
+				content: "The team participated in the Formula Bharath 2020 and was placed 6th in the Design event and 8th overall",
+			},
+			{
+				image: "assets/img/img/12.png",
+				title: "2021",
+				desc: "Formula Bharat Virtual",
+				content: "Due to Covid-19 pandemic and the lockdown, the event was conducted virtually and the team was placed 9th in Engineering Design and 9th  overall.",
 			},
 		],
 	},

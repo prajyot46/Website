@@ -49,7 +49,7 @@
     <div class="container d-flex">
       <div class="contact-info mr-auto">
         <i class="icofont-envelope"></i> <a href="mailto:teamchimera@rvce.edu.in">teamchimera@rvce.edu.in</a>
-        <i class="icofont-phone"></i> Vaibhav Hebbal: +91 80735 59500
+        <i class="icofont-phone"></i> Amith Hebbal: +91 7026091361
       </div>
       <div class="social-links">
         <a href="https://twitter.com/rvteamchimera" class="twitter"><i class="icofont-twitter"></i></a>
@@ -137,10 +137,11 @@
 
       </div>
     </section><!-- End About Section -->
+    <br>
 
     <!-- ======= Why Us Section ======= -->
 
-    <section id="achievements" class="achievements">
+   <!--  <section id="achievements" class="achievements">
       <div class="section-title">
         <span>ACHIEVEMENTS</span>
         <h2>ACHIEVEMENTS</h2>
@@ -267,7 +268,7 @@
         </div>
 
       </div>
-    </section>
+    </section>-->
     <!-- End Why Us Section -->
 
     <section id="timeline">
@@ -277,7 +278,16 @@
           <h3 class="timeline-header__subtitle">OUR HISTORY</h3>
         </div>
         <div class="timeline" id="timelineContainer">
-          <div  v-for="(object, index) in timelineobject" class="timeline-item" data-text="OUR HISTORY">
+          <div class="timelineBack">
+            <img class="timelineleft" src="assets/img/logo3.png" alt="">
+            <img class="timelineright" src="assets/img/logo3.png" alt=""> 
+            <img class="timelineleft1" src="assets/img/logo3.png" alt="">
+            <img class="timelineright" src="assets/img/logo3.png" alt=""> 
+            <img class="timelineleft1" src="assets/img/logo3.png" alt="">
+            <img class="timelineright" src="assets/img/logo3.png" alt=""> 
+          </div>
+          
+          <div  v-for="(object, index) in timelineobject" class="timeline-item" data-text="OUR HISTORY" data-aos="fade-right"  data-aos-duration="200">
             <div class="timeline__content"><img class="timeline__img" v-bind:src="object.image" />
               <h2 class="timeline__content-title">{{object.title}}</h2>
               <h1 style="font-size: 21px" class="timeline__content-desc">{{object.description}}</h1>
@@ -707,12 +717,12 @@
               <p>
                 Professor , Department of Mechanical Engineering
               </p>
-              <div class="social">
+              <!--<div class="social">
                 <a href=""><i class="icofont-twitter"></i></a>
                 <a href=""><i class="icofont-facebook"></i></a>
                 <a href=""><i class="icofont-instagram"></i></a>
                 <a href=""><i class="icofont-linkedin"></i></a>
-              </div>
+              </div>-->
             </div>
           </div>
         </div>
@@ -759,6 +769,15 @@
         </div>
       </div>
     </section>
+    <script>
+      const team = document.getElementById('leadingTeamContainer');
+      const lead = document.getElementsByClassName('teamob');
+      team.addEventListener('scroll', () => {
+          lead.style.transitionDuration = "0.5s";
+          lead.scrollTo(300,0)
+      });
+
+    </script>
     <!-- End Team Section -->
 
     <!--======SPONSORS SECTION======-->
@@ -852,8 +871,8 @@
             <div class="info-box  mb-4">
               <i class="bx bx-phone-call"></i>
               <h3>Call Us</h3>
-              <p>Vaibhav Hebbal: +91 80735 59500</p>
-              <p>Sushant Joshi: +91 94826 90484</p>
+              <p> Amith Hebbal: +91 7026091361</p>
+              <p>Preetham Reddy: +91 9849736067</p>
             </div>
           </div>
 
@@ -887,7 +906,7 @@
                 <div class="validate"></div>
               </div>
             
-              <div class="text-center"><button type="submit" btn-raised>Send Message</button></div>
+              <div class="text-center " style="color: chartreuse;" ><button type="submit" class="info-box" btn-raised style="padding: 8px; border-radius: 6px; border: none; color: rgb(131, 216, 45); background-color: white; ">SEND MESSAGE</button></div>
             </form>
           </div>
 
