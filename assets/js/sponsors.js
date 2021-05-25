@@ -115,7 +115,7 @@ var list = new Vue({
 			},
 			{
 				link: "https://www.igus.com/",
-				image: "assets/img/sponsers/igu.png",
+				image: "assets/img/sponsers/igus.png",
 				name: "Igus",
 			},
 			{

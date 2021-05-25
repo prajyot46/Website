@@ -1119,6 +1119,12 @@ section {
 	font-size: 18px;
 	margin: 0 2px;
 }
+.fit
+{
+	height: 110px;
+	width: 110px;
+
+}
 @media (max-width: 992px){
 	.teamob{
       width: 100%;
