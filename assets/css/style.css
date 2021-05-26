@@ -584,6 +584,22 @@ section {
 		font-size: 38px;
 	}
 }
+/*--------------------------------------------------------------
+# REsults
+--------------------------------------------------------------*/
+
+#results
+{
+	background-color: #ffffff;
+}
+.results
+{
+	position: relative;
+	padding: 30px;
+	border-radius: 20px;
+	border: 2px solid white;
+	background: radial-gradient(rgb(68, 63, 63),rgb(22, 22, 22));
+}
 
 /*--------------------------------------------------------------
 # About
