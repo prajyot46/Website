@@ -181,12 +181,18 @@ var teamJs = new Vue({
 			{
 				image: "assets/img/team/Nishanth.webp",
 				name: "M Nishanth Gopal",
-				subsystem: "Data Acquisation Systems",
+				subsystem: "Data Acquisition Systems",
 			},
 			{
 				image: "assets/img/team/Vibhor Bhardwaj.webp",
 				name: "Vibhor Bhardwaj",
 				subsystem: "Management and Sponsorship",
+			},
+
+			{
+				image: "assets/img/team/Kartik S Marathe.jpeg",
+				name: "Kartik S Marathe",
+				subsystem: "Data Acquisition System",
 			},
 	
 			{
@@ -281,12 +287,92 @@ var teamJs = new Vue({
 				name: "S Kethan",
 				subsystem: "NULL",
 			},
-			{
-				image: "assets/img/team/placeholder.webp",
-				name: "Kartik S Marathe",
-				subsystem: "Data Acquisation System",
-			},
+		
 		],
-		team2023: [],
+		team2023: [
+			{
+				image: "assets/img/team/Karthikeya_R_Shervegar.jpg",
+				name: "Karthikeya R Shervegar",
+				subsystem: "Safety Circuits",
+			},
+			{
+				image: "assets/img/team/Suhas B.jpg",
+				name: "Suhas B",
+				subsystem: "Data Acquisition System ",
+			},
+			{
+				image: "assets/img/team/RAJAT RAJ.jpg",
+				name: "Rajat Raj",
+				subsystem: "Safety Circuits",
+			},
+			{
+				image: "assets/img/team/sai sri vastav basapathi.jpg",
+				name: "Sai Sri Vastav Basapathi",
+				subsystem: "Suspension",
+			},
+			{
+				image: "assets/img/team/Vikas Bijjal.jpg",
+				name: "Vikas Bijjal",
+				subsystem: "Powertrain",
+			},
+			{
+				image: "assets/img/team/SAI KIRAN.png",
+				name: "Sai Kiran",
+				subsystem: "Powertrain",
+			},
+			{
+				image: "assets/img/team/Shashank.jpg",
+				name: "Shashank",
+				subsystem: "Safety Circuits",
+			},
+			{
+				image: "assets/img/team/Aditya Chikkmath.jpg",
+				name: "Aditya Chikkmath ",
+				subsystem: "Safety Circuits",
+			},
+			{
+				image: "assets/img/team/Mounika Sri R.jpg",
+				name: "Mounika Sri R ",
+				subsystem: "Safety Circuits",
+			},
+			{
+				image: "assets/img/team/Aditya Y Jeppu.jpg",
+				name: "Aditya Y Jeppu",
+				subsystem: "Powertrain",
+			},
+			{
+				image: "assets/img/team/Akanksh Ramesh Muniyappa.jpg",
+				name: "Akanksh Ramesh Muniyappa",
+				subsystem: "Safety Circuits",
+			},
+			{
+				image: "assets/img/team/Deeksha Bharath.jpg",
+				name: "Deeksha Bharath",
+				subsystem: "Suspension",
+			},
+			{
+				image: "assets/img/team/Madhukesh V.jpg",
+				name: "Madhukesh V",
+				subsystem: "Powertrain",
+			},
+			{
+				image: "assets/img/team/BHAVYA YASRAJ R CHAWDA.jpg",
+				name: "Bhavya Yasraj R Chawda",
+				subsystem: "Battery Management System",
+			},
+			{
+				image: "assets/img/team/Yash Raj Choudhary.png",
+				name: "Yash Raj Choudhary",
+				subsystem: "Data Acquisition System",
+			},
+			{
+				image: "assets/img/team/pratik handi.jpg",
+				name: "Pratik Handi",
+				subsystem: "Chassis",
+			},
+
+			
+
+		],
 	},
 });
